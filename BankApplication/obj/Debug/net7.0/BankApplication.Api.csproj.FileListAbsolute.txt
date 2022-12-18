@@ -259,3 +259,8 @@
 /Users/felix/Developer/BankApplication/BankApplication/obj/Debug/net7.0/BankApplication.pdb
 /Users/felix/Developer/BankApplication/BankApplication/obj/Debug/net7.0/BankApplication.Api.genruntimeconfig.cache
 /Users/felix/Developer/BankApplication/BankApplication/obj/Debug/net7.0/ref/BankApplication.dll
+/Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll

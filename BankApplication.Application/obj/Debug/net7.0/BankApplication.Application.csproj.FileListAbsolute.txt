@@ -1,0 +1,15 @@
+/Users/felix/Developer/BankApplication/BankApplication.Application/bin/Debug/net7.0/BankApplication.Application.deps.json
+/Users/felix/Developer/BankApplication/BankApplication.Application/bin/Debug/net7.0/BankApplication.Application.dll
+/Users/felix/Developer/BankApplication/BankApplication.Application/bin/Debug/net7.0/BankApplication.Application.pdb
+/Users/felix/Developer/BankApplication/BankApplication.Application/bin/Debug/net7.0/BankApplication.Domain.dll
+/Users/felix/Developer/BankApplication/BankApplication.Application/bin/Debug/net7.0/BankApplication.Domain.pdb
+/Users/felix/Developer/BankApplication/BankApplication.Application/obj/Debug/net7.0/BankApplication.Application.csproj.AssemblyReference.cache
+/Users/felix/Developer/BankApplication/BankApplication.Application/obj/Debug/net7.0/BankApplication.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/felix/Developer/BankApplication/BankApplication.Application/obj/Debug/net7.0/BankApplication.Application.AssemblyInfoInputs.cache
+/Users/felix/Developer/BankApplication/BankApplication.Application/obj/Debug/net7.0/BankApplication.Application.AssemblyInfo.cs
+/Users/felix/Developer/BankApplication/BankApplication.Application/obj/Debug/net7.0/BankApplication.Application.csproj.CoreCompileInputs.cache
+/Users/felix/Developer/BankApplication/BankApplication.Application/obj/Debug/net7.0/BankApplication.Application.csproj.CopyComplete
+/Users/felix/Developer/BankApplication/BankApplication.Application/obj/Debug/net7.0/BankApplication.Application.dll
+/Users/felix/Developer/BankApplication/BankApplication.Application/obj/Debug/net7.0/refint/BankApplication.Application.dll
+/Users/felix/Developer/BankApplication/BankApplication.Application/obj/Debug/net7.0/BankApplication.Application.pdb
+/Users/felix/Developer/BankApplication/BankApplication.Application/obj/Debug/net7.0/ref/BankApplication.Application.dll

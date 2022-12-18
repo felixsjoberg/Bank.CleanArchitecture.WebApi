@@ -1,0 +1,755 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.DotNet.Scaffolding.Shared</name>
+    </assembly>
+    <members>
+        <member name="M:Microsoft.Extensions.Internal.ArgumentEscaper.EscapeAndConcatenateArgArrayForProcessStart(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Undo the processing which took place to create string[] args in Main,
+            so that the next process will receive the same string[] args
+            
+            See here for more info:
+            http://blogs.msdn.com/b/twistylittlepassagesallalike/archive/2011/04/23/everyone-quotes-arguments-the-wrong-way.aspx
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.Internal.ArgumentEscaper.EscapeArgArray(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Undo the processing which took place to create string[] args in Main,
+            so that the next process will receive the same string[] args
+            
+            See here for more info:
+            http://blogs.msdn.com/b/twistylittlepassagesallalike/archive/2011/04/23/everyone-quotes-arguments-the-wrong-way.aspx
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.Internal.DotnetToolDispatcher.CreateDispatchCommand(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.String,System.String)">
+            <summary>
+            Invokes the 'tool' with the dependency context of the user's project.
+            </summary>
+            <param name="runtimeConfigPath">Full path to the runtimeconfig.json for the user's project.</param>
+            <param name="depsFile">Full path to the deps.json for the user's project.</param>
+            <param name="dependencyToolPath">The executable which needs to be invoked.</param>
+            <param name="dispatchArgs">Arguments to pass to the executable.</param>
+            <param name="tfmMoniker"></param>
+            <param name="configuration"></param>
+            <param name="projectDirectory"></param>
+            <param name="assemblyFullPath"></param>
+        </member>
+        <member name="T:Microsoft.Extensions.ProjectModel.MessageStrings">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Extensions.ProjectModel.MessageStrings.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Extensions.ProjectModel.MessageStrings.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Extensions.ProjectModel.MessageStrings.ProjectPathNotGiven">
+            <summary>
+              Looks up a localized string similar to Project path has not been specified.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Extensions.ProjectModel.MessageStrings.TargetLocationNotGiven">
+            <summary>
+              Looks up a localized string similar to Target location (the build directory) has not been specified.
+            </summary>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.CodeModifier.DocumentBuilder.GetNodeInsertionList(Microsoft.DotNet.Scaffolding.Shared.CodeModifier.CodeChange.CodeSnippet,Microsoft.CodeAnalysis.CSharp.SyntaxKind)">
+            <summary>
+            Creates a List of SyntaxNodes with the code change added, useful as an input for methods such as SyntaxNode.InsertNodesBefore that require a list
+            Additionally, with this method we can use the same code for StatementSyntax and GlobalStatementSyntax nodes
+            </summary>
+            <param name="codeChange"></param>
+            <param name="syntaxKind"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.CodeModifier.DocumentBuilder.GetSpecifiedNode(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})">
+            <summary>
+            Searches through list of nodes and returns the first node that contains the specifierStatement
+            Note: can be null
+            </summary>
+            <param name="specifierStatement"></param>
+            <param name="descendantNodes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.CodeModifier.DocumentBuilder.GetNodeWithUpdatedLambda(Microsoft.CodeAnalysis.CSharp.Syntax.LambdaExpressionSyntax,Microsoft.DotNet.Scaffolding.Shared.CodeModifier.CodeChange.CodeSnippet,Microsoft.CodeAnalysis.SyntaxNode)">
+            <summary>
+            Given an existing lamba expression, updates the parameters and block as necessary
+            </summary>
+            <param name="existingLambda"></param>
+            <param name="change"></param>
+            <param name="parent"></param>
+            <returns>parent with updated lambda expression</returns>
+        </member>
+        <member name="T:Microsoft.DotNet.Scaffolding.Shared.FileSystemChangeInformation">
+            <summary>
+            Represents information about a file system change.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.FileSystemChangeInformation.FullPath">
+            <summary>
+            Full path of the changed file/ directory.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.FileSystemChangeInformation.FileSystemChangeType">
+            <summary>
+            See <see cref="P:Microsoft.DotNet.Scaffolding.Shared.FileSystemChangeInformation.FileSystemChangeType"/> for possible values.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.FileSystemChangeInformation.FileContents">
+            <summary>
+            Contents of the file if <see cref="P:Microsoft.DotNet.Scaffolding.Shared.FileSystemChangeInformation.FileSystemChangeType"/>
+            is <see cref="F:Microsoft.DotNet.Scaffolding.Shared.FileSystemChangeType.AddFile"/>
+            or <see cref="F:Microsoft.DotNet.Scaffolding.Shared.FileSystemChangeType.EditFile"/>
+            </summary>
+        </member>
+        <member name="T:Microsoft.DotNet.Scaffolding.Shared.FileSystemChangeType">
+            <summary>
+            Indicates the type of file system change
+            </summary>
+        </member>
+        <member name="F:Microsoft.DotNet.Scaffolding.Shared.FileSystemChangeType.AddFile">
+            <summary>
+            A new file is added.
+            </summary>
+        </member>
+        <member name="F:Microsoft.DotNet.Scaffolding.Shared.FileSystemChangeType.EditFile">
+            <summary>
+            A file existing on disk was edited.
+            </summary>
+        </member>
+        <member name="F:Microsoft.DotNet.Scaffolding.Shared.FileSystemChangeType.DeleteFile">
+            <summary>
+            A file existing on disk is deleted.
+            </summary>
+        </member>
+        <member name="F:Microsoft.DotNet.Scaffolding.Shared.FileSystemChangeType.AddDirectory">
+            <summary>
+            A new directory is added.
+            </summary>
+        </member>
+        <member name="F:Microsoft.DotNet.Scaffolding.Shared.FileSystemChangeType.RemoveDirectory">
+            <summary>
+            A directory existing on disk is removed.
+            </summary>
+        </member>
+        <member name="T:Microsoft.DotNet.Scaffolding.Shared.MessageStrings">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.MessageStrings.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.MessageStrings.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.MessageStrings.AddDirectoryMessage">
+            <summary>
+              Looks up a localized string similar to Add directory: &apos;{0}&apos;.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.MessageStrings.AddFileMessage">
+            <summary>
+              Looks up a localized string similar to Add File: &apos;{0}&apos;.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.MessageStrings.ContentsMessage">
+            <summary>
+              Looks up a localized string similar to Contents: {0}.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.MessageStrings.DeleteFileMessage">
+            <summary>
+              Looks up a localized string similar to Deleted file: &apos;{0}&apos;.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.MessageStrings.EditFileMessage">
+            <summary>
+              Looks up a localized string similar to Edit File: &apos;{0}&apos;.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.MessageStrings.EndFileSystemChangeToken">
+            <summary>
+              Looks up a localized string similar to :::End FileSystemChange:::.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.MessageStrings.InvalidFileSystemChangeMessage">
+            <summary>
+              Looks up a localized string similar to Invalid FileSystemChange message..
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.MessageStrings.InvalidProjectInformationMessage">
+            <summary>
+              Looks up a localized string similar to ProjectInformation Response received is not valid..
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.MessageStrings.ProtocolVersionMismatch">
+            <summary>
+              Looks up a localized string similar to The protocol version &apos;{0}&apos; of the message is different than currently handled version &apos;{1}&apos;..
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.MessageStrings.RemoveDirectoryMessage">
+            <summary>
+              Looks up a localized string similar to Deleted directory: &apos;{0}&apos;.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.MessageStrings.StartFileSystemChangeToken">
+            <summary>
+              Looks up a localized string similar to :::Start FileSystemChange:::.
+            </summary>
+        </member>
+        <member name="T:Microsoft.DotNet.Scaffolding.Shared.Messaging.Message">
+            <summary>
+            Contains information passed between Scaffolding server and client.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.Messaging.Message.HostId">
+            <summary>
+            An identifier for the sender of the message.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.Messaging.Message.MessageType">
+            <summary>
+            See <see cref="T:Microsoft.DotNet.Scaffolding.Shared.Messaging.MessageTypes"/> for valid message types.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.Messaging.Message.Payload">
+            <summary>
+            Payload in json format.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.Messaging.Message.ProtocolVersion">
+            <summary>
+            The protocol version to use for communication.
+            </summary>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.Messaging.Message.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:Microsoft.DotNet.Scaffolding.Shared.Messaging.MessageTypes">
+            <summary>
+            Represents valid message types for communication.
+            </summary>
+        </member>
+        <member name="F:Microsoft.DotNet.Scaffolding.Shared.Messaging.MessageTypes.Scaffolding_Completed">
+            <summary>
+            Scaffolding is completed. No more messages can be sent after this.
+            </summary>
+        </member>
+        <member name="F:Microsoft.DotNet.Scaffolding.Shared.Messaging.MessageTypes.Terminate">
+            <summary>
+            Scaffolding did not complete but had to terminate.
+            </summary>
+        </member>
+        <member name="F:Microsoft.DotNet.Scaffolding.Shared.Messaging.MessageTypes.ProjectInfoRequest">
+            <summary>
+            Request message for getting project information.
+            <see cref="T:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext"/>
+            </summary>
+        </member>
+        <member name="F:Microsoft.DotNet.Scaffolding.Shared.Messaging.MessageTypes.ProjectInfoResponse">
+            <summary>
+            Response message containing project information.
+            <see cref="T:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext"/>
+            </summary>
+        </member>
+        <member name="F:Microsoft.DotNet.Scaffolding.Shared.Messaging.MessageTypes.FileSystemChangeInformation">
+            <summary>
+            File System Change message containing information about a
+            single file system change. <see cref="F:Microsoft.DotNet.Scaffolding.Shared.Messaging.MessageTypes.FileSystemChangeInformation"/>
+            </summary>
+        </member>
+        <member name="T:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.AssemblyFullPath">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.AssemblyName">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.CompilationAssemblies">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.CompilationItems">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.Config">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.Configuration">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.DepsFile">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.EmbededItems">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.IsClassLibrary">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.PackageDependencies">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.PackagesDirectory">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.Platform">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.ProjectFullPath">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.ProjectName">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.ProjectReferenceInformation">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.ProjectReferences">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.RootNamespace">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.RuntimeConfig">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.TargetDirectory">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.TargetFramework">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.CommonProjectContext.GeneratedImplicitNamespaceImportFile">
+            <inheritdoc/>
+        </member>
+        <member name="T:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.Dependency">
+            <summary>
+            Represents a dependency.
+            </summary>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.Dependency.#ctor(System.String,System.String)">
+            <summary/>
+            <param name="name">Name of the dependency.</param>
+            <param name="version">Version of the dependency.</param>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.Dependency.Name">
+            <summary>
+            Name of the dependency.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.Dependency.Version">
+            <summary>
+            Version of the dependency.
+            </summary>
+        </member>
+        <member name="T:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.DependencyDescription">
+            <summary>
+            Represents a NuGet package dependency of the project.
+            </summary>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.DependencyDescription.#ctor(System.String,System.String,System.String,System.String,Microsoft.DotNet.Scaffolding.Shared.ProjectModel.DependencyType,System.Boolean)">
+            <summary/>
+            <param name="name">Name of the dependency.</param>
+            <param name="version">Version of the dependency.</param>
+            <param name="path">Full path to the dependency.</param>
+            <param name="targetFramework">TFM of the project to which this dependency belongs.</param>
+            <param name="type">Type of the dependency. <see cref="T:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.DependencyType"/></param>
+            <param name="resolved">Indicates whether this dependency is resolved on disk or not.</param>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.DependencyDescription.TargetFramework">
+            <summary>
+            TFM of the project to which this dependency belongs.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.DependencyDescription.Name">
+            <summary>
+            Name of the dependency.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.DependencyDescription.Path">
+            <summary>
+            Full path to the dependency.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.DependencyDescription.Version">
+            <summary>
+            Version of the dependency.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.DependencyDescription.Type">
+            <summary>
+            Type of the dependency. <see cref="T:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.DependencyType"/>
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.DependencyDescription.Resolved">
+            <summary>
+            Specifies whether this dependency has been resolved.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.DependencyDescription.Dependencies">
+            <summary>
+            Dependencies of the this dependency.
+            </summary>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.DependencyDescription.AddDependency(Microsoft.DotNet.Scaffolding.Shared.ProjectModel.Dependency)">
+            <summary>
+            Adds a dependency to current dependencies.
+            </summary>
+            <param name="dependency"></param>
+        </member>
+        <member name="T:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.DependencyType">
+            <summary>
+            Types of dependencies.
+            </summary>
+        </member>
+        <member name="F:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.DependencyType.Target">
+            <summary>
+            Represents the Target secion in the project.assets.json.
+            (The dependencies of this type of dependency are the direct dependencies
+            of the project.)
+            </summary>
+        </member>
+        <member name="F:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.DependencyType.Package">
+            <summary>
+            NuGet package dependency.
+            </summary>
+        </member>
+        <member name="F:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.DependencyType.Assembly">
+            <summary>
+            Assembly reference.
+            </summary>
+        </member>
+        <member name="F:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.DependencyType.Project">
+            <summary>
+            Project Reference.
+            </summary>
+        </member>
+        <member name="F:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.DependencyType.AnalyzerAssembly">
+            <summary>
+            Analyzer Assembly reference.
+            </summary>
+        </member>
+        <member name="F:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.DependencyType.Unknown">
+            <summary>
+            Unknown reference type.
+            </summary>
+        </member>
+        <member name="T:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext">
+            <summary>
+            Represents the project information on which scaffolding is being done.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.ProjectName">
+            <summary>
+            Name of the project.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.Configuration">
+            <summary>
+            Project Configuration.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.Platform">
+            <summary>
+            Platform targeted by the project.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.ProjectFullPath">
+            <summary>
+            Full path to the csproj file of the project.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.RootNamespace">
+            <summary>
+            Default namespace for the project.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.IsClassLibrary">
+            <summary>
+            Specifies whether the output of the project is a
+            class library.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.TargetFramework">
+            <summary>
+            TargetFramework for the project.
+            If the project has multiple frameworks, all of the
+            information in the ProjectContext is specific to this
+            TargetFramework.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.TargetFrameworkMoniker">
+            <summary>
+            TargetFrameworkMoniker for the project.
+            If the project has multiple frameworks, all of the
+            information in the ProjectContext is specific to this
+            TargetFramework.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.Config">
+            <summary>
+            Full path to config file for the assembly.
+            Usually <see cref="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.AssemblyFullPath"/> + ".config"
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.PackagesDirectory">
+            <summary>
+            NuGet package root for the project.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.TargetDirectory">
+            <summary>
+            Full path of the Output directory.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.AssemblyName">
+            <summary>
+            File name of the project output.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.AssemblyFullPath">
+            <summary>
+            The full path of the project output.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.DepsFile">
+            <summary>
+            Full path to deps.json file of the built project.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.RuntimeConfig">
+            <summary>
+            Full path to runtimeconfig.json file for the project.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.CompilationItems">
+            <summary>
+            Items included for compilation in the project.
+            &lt;Compile Include="" /&gt;
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.EmbededItems">
+            <summary>
+            Items inlcuded as embedded resources.
+            &lt;EmbeddedResource Include="" /&gt;
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.PackageDependencies">
+            <summary>
+            NuGet dependencies of the project.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.CompilationAssemblies">
+            <summary>
+            Assemblies required for compilation of the project.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.ProjectReferences">
+            <summary>
+            Paths to project references (direct and indirect) of the project.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.ProjectReferenceInformation">
+            <summary>
+            Collection of information regarding the project references.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext.GeneratedImplicitNamespaceImportFile">
+            <summary>
+            .cs file in obj folder generated at compile time with all default namespace imports in .NET 6+.
+            </summary>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.ProjectContextExtensions.CheckNullableVariable(Microsoft.DotNet.Scaffolding.Shared.ProjectModel.IProjectContext)">
+            <summary>
+            Given an IProjectContext, check if IProjectContext.Nullable is set, if it is, no changes necessary.
+            If not already there, set using ProjectContextHelper.GetXmlKeyValue (parsing the csproj xml file).
+            </summary>
+            <param name="context">IProjectContext which has csproj path, and the Nullable variable to set.</param>
+            <returns>modified IProjectContext with the Nullable property set or the same IProjectContext as passed.</returns>
+        </member>
+        <member name="T:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.ProjectReferenceInformation">
+            <summary>
+            Information of the project reference including full path, assembly name, etc.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.ProjectReferenceInformation.FullPath">
+            <summary>
+            Full path to the csproj file of the project.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.ProjectReferenceInformation.ProjectName">
+            <summary>
+            Name of the project reference.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.ProjectReferenceInformation.AssemblyName">
+            <summary>
+            Assembly name for the project reference.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.ProjectReferenceInformation.CompilationItems">
+            <summary>
+            Items included in the project reference for compilation
+            &lt;Compile Include="" /&gt;
+            </summary>
+        </member>
+        <member name="T:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.ResolvedReference">
+            <summary>
+            Information about a resolved reference of the project.
+            The reference could be from a NuGet package, assembly ref etc.
+            </summary>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.ResolvedReference.#ctor(System.String,System.String)">
+            <summary/>
+            <param name="name">Name of the referenced assembly.</param>
+            <param name="resolvedPath">Full path of the referenced assembly.</param>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.ResolvedReference.ResolvedPath">
+            <summary>
+            Full path of the referenced assembly.
+            </summary>
+        </member>
+        <member name="P:Microsoft.DotNet.Scaffolding.Shared.ProjectModel.ResolvedReference.Name">
+            <summary>
+            Name of the referenced assembly.
+            </summary>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.ProjectContextHelper.GetXmlKeyValue(System.String,System.String)">
+            <summary>
+            Returns the value given a key (aka a xml tag) from the given xml file
+            </summary>
+            <param name="variableKey">variable key or tags in the csproj file</param>
+            <param name="xmlText">xml file text (mostly used for parsing csproj file)</param>
+            <returns>empty or value from the parsing the elements of the xml file.</returns>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.Project.IModelTypesLocator.GetAllDocuments">
+            <summary>
+            returns all Documents in all the projects in the solution.
+            </summary>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.Project.IModelTypesLocator.GetType(System.String)">
+            <summary>
+            Returns the types matching a type name.
+            The method returns types for which the
+            full name matches the given typeName exactly.
+            However, if there are none exactly matching, then
+            it returns all the types whose type name (without the namespace name)
+            matches the given type name. This allows the callers
+            to pass in a short type name and get the results.
+            Caller has to decide what to do when there are multiple matches.
+            </summary>
+            <param name="typeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.Project.ProjectModifierHelper.IsMinimalApp(Microsoft.DotNet.Scaffolding.Shared.Project.IModelTypesLocator)">
+            <summary>
+            Check if Startup.cs or similar file exists.
+            </summary>
+            <returns>true if Startup.cs does not exist, false if it does exist.</returns>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.Project.ProjectModifierHelper.ProcessCsprojTfms(System.String)">
+            <summary>
+            Parses the csproj xml text and gets one or more TargetFrameworks for the project.
+            </summary>
+            <param name="csprojText">.csproj file as string</param>
+            <returns>string[] containing target frameworks of the project</returns>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.Project.ProjectModifierHelper.FormatCodeBlock(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Boolean)">
+            <summary>
+            Format a string of a SimpleMemberAccessExpression(eg., Type.Value)
+            Replace Type with its value from the parameterDict.
+            </summary>
+            <param name="codeBlock">SimpleMemberAccessExpression string</param>
+            <param name="parameterDict">IDictionary with parameter type keys and values</param>
+            <param name="trim">Whether to trim the resulting string</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.Project.ProjectModifierHelper.ReplaceValue(System.String,System.String,System.String)">
+            <summary>
+            Looks for oldValue in codeBlock and replaces with newValue
+            </summary>
+            <param name="codeBlock"></param>
+            <param name="oldValue"></param>
+            <param name="newValue"></param>
+            <returns>codeBlock where any instance of 'oldValue' is replaced with 'newValue'</returns>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.Project.ProjectModifierHelper.UpdateVariables(Microsoft.DotNet.Scaffolding.Shared.CodeModifier.CodeChange.CodeSnippet[],System.String,System.String)">
+            <summary>
+            Replaces all instances of the old value with the new value
+            </summary>
+            <param name="changes"></param>
+            <param name="oldValue"></param>
+            <param name="newValue"></param>
+            <returns>updated CodeSnippet array</returns>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.Project.ProjectModifierHelper.UpdateVariables(Microsoft.DotNet.Scaffolding.Shared.CodeModifier.CodeChange.CodeSnippet,System.String,System.String)">
+            <summary>
+            Replaces all instances of the old value with the new value
+            </summary>
+            <param name="change"></param>
+            <param name="oldValue"></param>
+            <param name="newValue"></param>
+            <returns>updated CodeSnippet</returns>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.Project.ProjectModifierHelper.TrimStatement(System.String)">
+            <summary>
+            Trim ' ', '\r', '\n' and replace any whitespace with no spaces.
+            </summary>
+            <param name="statement"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.Project.ProjectModifierHelper.GetBuilderVariableIdentifierTransformation(Microsoft.CodeAnalysis.SyntaxList{Microsoft.CodeAnalysis.CSharp.Syntax.MemberDeclarationSyntax})">
+            <summary>
+            Searches through the list of nodes to find replacement variable identifier names
+            </summary>
+            <param name="members"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.Project.ProjectModifierHelper.FilterOptions(System.String[],Microsoft.DotNet.Scaffolding.Shared.CodeModifier.CodeChange.CodeChangeOptions)">
+            <summary>
+            Filter Options string array to matching CodeChangeOptions.
+            Primary use to filter out CodeBlocks and Files that apply in Microsoft Graph and Downstream API scenarios
+            </summary>
+            <param name="options">string [] in cm_*.json files for code modifications</param>
+            <param name="codeChangeOptions">based on cli parameters</param>
+            <returns>true if the CodeChangeOptions apply, false otherwise. </returns>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.Project.ProjectModifierHelper.ModifyDocumentText(Microsoft.CodeAnalysis.Document,System.Collections.Generic.IEnumerable{Microsoft.DotNet.Scaffolding.Shared.CodeModifier.CodeChange.CodeSnippet})">
+            <summary>
+            Replaces text within document or appends text to the end of the document
+            depending on whether change.ReplaceSnippet is set 
+            </summary>
+            <param name="fileDoc"></param>
+            <param name="codeChanges"></param>
+            <returns>updated document, or null if no changes made</returns>
+        </member>
+        <member name="M:Microsoft.DotNet.Scaffolding.Shared.Project.ProjectModifierHelper.ProcessTfm(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Take the tfm value in the csproj and use the Dictionary of variables to find its true value.
+            </summary>
+            <param name="tfm">value for <TargetFramework/> or '<TargetFrameworks/> in the csproj file</param>
+            <param name="csprojVariables">dictionary with all csproj properties and values</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

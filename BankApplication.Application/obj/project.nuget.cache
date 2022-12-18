@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "UCUPp6q7AG7ftTAKpEpAX5rU3ohCmqZ1EGz5lEqAomIDa8WQs+PxB03r7nig5HOXXoxFg7t4m5STOdup7dqRDA==",
+  "success": true,
+  "projectFilePath": "/Users/felix/Developer/BankApplication/BankApplication.Application/BankApplication.Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/felix/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

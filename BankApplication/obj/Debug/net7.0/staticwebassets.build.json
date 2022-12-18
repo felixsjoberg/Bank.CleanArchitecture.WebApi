@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "dFygIogvDAJFHdmFiArcHZrQ5PJWzSTv8IIUfAipCeM=",
+  "Source": "BankApplication",
+  "BasePath": "_content/BankApplication",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

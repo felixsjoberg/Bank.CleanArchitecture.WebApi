@@ -1,0 +1,12 @@
+/Users/felix/Developer/BankApplication/BankApplication.Domain/bin/Debug/net7.0/BankApplication.Domain.deps.json
+/Users/felix/Developer/BankApplication/BankApplication.Domain/bin/Debug/net7.0/BankApplication.Domain.dll
+/Users/felix/Developer/BankApplication/BankApplication.Domain/bin/Debug/net7.0/BankApplication.Domain.pdb
+/Users/felix/Developer/BankApplication/BankApplication.Domain/obj/Debug/net7.0/BankApplication.Domain.csproj.AssemblyReference.cache
+/Users/felix/Developer/BankApplication/BankApplication.Domain/obj/Debug/net7.0/BankApplication.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/felix/Developer/BankApplication/BankApplication.Domain/obj/Debug/net7.0/BankApplication.Domain.AssemblyInfoInputs.cache
+/Users/felix/Developer/BankApplication/BankApplication.Domain/obj/Debug/net7.0/BankApplication.Domain.AssemblyInfo.cs
+/Users/felix/Developer/BankApplication/BankApplication.Domain/obj/Debug/net7.0/BankApplication.Domain.csproj.CoreCompileInputs.cache
+/Users/felix/Developer/BankApplication/BankApplication.Domain/obj/Debug/net7.0/BankApplication.Domain.dll
+/Users/felix/Developer/BankApplication/BankApplication.Domain/obj/Debug/net7.0/refint/BankApplication.Domain.dll
+/Users/felix/Developer/BankApplication/BankApplication.Domain/obj/Debug/net7.0/BankApplication.Domain.pdb
+/Users/felix/Developer/BankApplication/BankApplication.Domain/obj/Debug/net7.0/ref/BankApplication.Domain.dll

@@ -20,6 +20,7 @@
     <None Remove="Services\" />
     <None Remove="Microsoft.Extensions.Configuration" />
     <None Remove="Microsoft.Extensions.Options.ConfigurationExtensions" />
+    <None Remove="Presistence\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.123" />
@@ -32,5 +33,6 @@
   <ItemGroup>
     <Folder Include="Authentication\" />
     <Folder Include="Services\" />
+    <Folder Include="Presistence\" />
   </ItemGroup>
 </Project>

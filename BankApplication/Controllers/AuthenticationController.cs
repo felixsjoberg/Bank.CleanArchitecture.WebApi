@@ -26,16 +26,17 @@ namespace BankApplication.Controllers;
     [HttpPost("register")]
     public IActionResult Register(RegisterRequest request)
     {
-        var authResult = _authenticationService.Register(request.FirstName,
+        var authResult = _authenticationService.Register(
+            request.FirstName,
             request.LastName,
             request.Email,
             request.Password);
 
         var response = new AuthenticationResponse(
-            authResult.Id,
-            authResult.FirstName,
-            authResult.LastName,
-            authResult.Email,
+            authResult.User.UserId,
+            authResult.User.FirstName,
+            authResult.User.LastName,
+            authResult.User.Email,
             authResult.token);
         return Ok(response);
     }
@@ -49,10 +50,10 @@ namespace BankApplication.Controllers;
             request.Password);
 
         var response = new AuthenticationResponse(
-            authResult.Id,
-            authResult.FirstName,
-            authResult.LastName,
-            authResult.Email,
+            authResult.User.UserId,
+            authResult.User.FirstName,
+            authResult.User.LastName,
+            authResult.User.Email,
             authResult.token);
         return Ok(response);
     }

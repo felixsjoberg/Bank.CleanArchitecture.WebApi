@@ -1,11 +1,10 @@
 ﻿using System;
+using Domain.Domains;
+
 namespace BankApplication.Application.Authentication;
 
 public record AuthenticationResult(
-    Guid Id,
-    string FirstName,
-    string LastName,
-    string Email,
+    User User,
     string token
     );
 

@@ -1,42 +1,39 @@
 ﻿<Properties StartupConfiguration="{1248D8EB-484D-4C6E-BC48-8BDE4949B56F}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BankApplication/appsettings.Development.json">
-    <Files>
-      <File FileName="BankApplication.Infrastructure/Services/DateTimeProvider.cs" Line="1" Column="1" />
-      <File FileName="BankApplication.Infrastructure/DependencyInjection.cs" Line="15" Column="89" />
-      <File FileName="BankApplication/Program.cs" Line="28" Column="1" />
-      <File FileName="BankApplication.Application/Common/Interfaces/Services/IDateTimeProvider.cs" Line="1" Column="1" />
-      <File FileName="BankApplication/appsettings.json" Line="13" Column="22" />
-      <File FileName="BankApplication/appsettings.Development.json" Line="9" Column="20" />
-      <File FileName="BankApplication/Properties/launchSettings.json" Line="35" Column="48" />
-      <File FileName="BankApplication.Infrastructure/Authentication/JwtTokenGenerator.cs" Line="41" Column="83" />
-      <File FileName="BankApplication.Infrastructure/Authentication/JwtSettings.cs" Line="5" Column="36" />
-      <File FileName="BankApplication/BankApplication.Api.csproj" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BankApplication" expanded="True">
             <Node name="BankApplication.Api" expanded="True">
+              <Node name="Controllers" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="appsettings.json" expanded="True">
-                <Node name="appsettings.Development.json" selected="True" />
-              </Node>
+              <Node name="appsettings.json" expanded="True" />
             </Node>
             <Node name="BankApplication.Application" expanded="True">
               <Node name="Common" expanded="True">
                 <Node name="Interfaces" expanded="True">
+                  <Node name="Authentication" expanded="True" />
                   <Node name="Services" expanded="True" />
                 </Node>
               </Node>
+              <Node name="Persistence" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="Authentication" expanded="True" />
+              </Node>
             </Node>
-            <Node name="BankApplication.Contracts" expanded="True">
-              <Node name="Authentication" expanded="True" />
+            <Node name="BankApplication.Domain" expanded="True">
+              <Node name="Models" expanded="True">
+                <Node name="User.cs" selected="True" />
+              </Node>
             </Node>
             <Node name="BankApplication.Infrastructure" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
               <Node name="Authentication" expanded="True" />
+              <Node name="Presistence" expanded="True" />
               <Node name="Services" expanded="True" />
             </Node>
           </Node>
@@ -44,11 +41,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.BankApplication.Api PreferredExecutionTarget="/Applications/Firefox.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

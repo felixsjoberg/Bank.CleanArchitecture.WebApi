@@ -1,8 +1,10 @@
 ﻿using System;
+using Domain.Domains;
+
 namespace BankApplication.Application.Common.Interfaces;
 
 public interface IJwtTokenGenerator
 {
-    string GenerateToken(Guid userId, string firstName, string lastName);
+    string GenerateToken(User user);
 }
 

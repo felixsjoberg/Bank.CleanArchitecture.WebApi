@@ -6,6 +6,9 @@ using BankApplication.Infrastructure.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
+using BankApplication.Infrastructure.Presistence;
+using BankApplication.Application.Persistence;
+
 namespace BankApplication.Infrastructure;
 
 public static class DependencyInjection
@@ -16,6 +19,7 @@ public static class DependencyInjection
         services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
 
+        services.AddScoped<IUserRepository, UserRepository>();
         return services;
     }
 }

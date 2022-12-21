@@ -14,5 +14,3 @@ namespace BankApplication.Api.Controllers
         }
     }
 }
-
-

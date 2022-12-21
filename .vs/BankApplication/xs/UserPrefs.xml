@@ -1,44 +1,65 @@
 ﻿<Properties StartupConfiguration="{1248D8EB-484D-4C6E-BC48-8BDE4949B56F}|https">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/felix/Developer/BankApplication/BankApplication/Controllers/ErrorsController.cs" relfile="BankApplication/Controllers/ErrorsController.cs" line="9" column="1" />
+      <Breakpoint file="/Users/felix/Developer/BankApplication/BankApplication/Controllers/ErrorsController.cs" relfile="BankApplication/Controllers/ErrorsController.cs" line="10" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BankApplication/Controllers/ErrorsController.cs">
+  <MonoDevelop.Ide.ItemProperties.BankApplication.Api PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BankApplication.Application/Authentication/Queries/Login/LoginQueryHandler.cs">
     <Files>
-      <File FileName="BankApplication.Domain/Models/User.cs" />
-      <File FileName="BankApplication.Application/Services/Authentication/AuthenticationService.cs" Line="31" Column="35" />
-      <File FileName="BankApplication.Infrastructure/Presistence/UserRepository.cs" />
-      <File FileName="BankApplication/Controllers/ErrorsController.cs" Line="17" Column="1" />
-      <File FileName="BankApplication/Controllers/AuthenticationController.cs" />
-      <File FileName="BankApplication/appsettings.Development.json" />
-      <File FileName="BankApplication/appsettings.json" />
-      <File FileName="BankApplication/Program.cs" />
+      <File FileName="BankApplication/Controllers/ErrorsController.cs" />
+      <File FileName="BankApplication.Application/Services/Authentication/Common/AuthenticationResult.cs" Line="4" Column="60" />
+      <File FileName="BankApplication.Application/DependencyInjection.cs" />
+      <File FileName="BankApplication/Controllers/AuthenticationController.cs" Line="40" Column="29" />
+      <File FileName="BankApplication.Application/Services/Authentication/Register/RegisterCommand.cs" Line="12" Column="1" />
+      <File FileName="BankApplication.Application/Services/Authentication/Register/RegisterCommandHandler.cs" Line="13" Column="5" />
+      <File FileName="BankApplication.Application/Services/Authentication/Commands/AuthenticationCommandService.cs" Line="12" Column="54" />
+      <File FileName="BankApplication.Application/Services/Authentication/Queries/AuthenticationQueryService.cs" Line="1" Column="1" />
+      <File FileName="BankApplication.Application/Authentication/Queries/Login/LoginQuery.cs" Line="10" Column="1" />
+      <File FileName="BankApplication.Application/Authentication/Queries/Login/LoginQueryHandler.cs" Line="9" Column="52" />
+      <File FileName="BankApplication.Application/Authentication/Commands/Register/IAuthenticationCommandService.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BankApplication" expanded="True">
             <Node name="BankApplication.Api" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="ErrorsController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
             </Node>
             <Node name="BankApplication.Application" expanded="True">
-              <Node name="Services" expanded="True">
-                <Node name="Authentication" expanded="True" />
+              <Node name="Authentication" expanded="True">
+                <Node name="Commands" expanded="True">
+                  <Node name="Register" expanded="True" />
+                </Node>
+                <Node name="Queries" expanded="True">
+                  <Node name="Login" expanded="True">
+                    <Node name="LoginQueryHandler.cs" selected="True" />
+                  </Node>
+                </Node>
               </Node>
+              <Node name="Services" expanded="True">
+                <Node name="Authentication" expanded="True">
+                  <Node name="Common" expanded="True" />
+                  <Node name="Queries" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="BankApplication.Contracts" expanded="True">
+              <Node name="Authentication" expanded="True" />
             </Node>
             <Node name="BankApplication.Domain" expanded="True">
               <Node name="Models" expanded="True" />
+            </Node>
+            <Node name="BankApplication.Infrastructure" expanded="True">
+              <Node name="Presistence" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.BankApplication.Api PreferredExecutionTarget="/Applications/Firefox.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

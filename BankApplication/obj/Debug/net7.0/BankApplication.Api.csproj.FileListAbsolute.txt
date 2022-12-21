@@ -264,3 +264,6 @@
 /Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
 /Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
 /Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/MediatR.dll
+/Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/MediatR.Contracts.dll
+/Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/MediatR.Extensions.Microsoft.DependencyInjection.dll

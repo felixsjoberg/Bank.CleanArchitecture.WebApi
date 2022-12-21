@@ -1,12 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using BankApplication.Application.Authentication;
-using BankApplication.Application.Authentication.Commands;
-using BankApplication.Application.Authentication.Queries;
+using BankApplication.Application.Services.Commands.Register;
+using BankApplication.Application.Services.Queries.Login;
 using BankApplication.Contracts.Authentication;
-using Microsoft.AspNetCore.Http;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BankApplication.Controllers;
@@ -14,52 +9,46 @@ namespace BankApplication.Controllers;
 
 
 
-  [Route("auth")]
+[Route("auth")]
   [ApiController]
   public class AuthenticationController : ControllerBase
   {
-    private readonly IAuthenticationCommandService _authenticationCommandService;
-    private readonly IAuthenticationQueryService _authenticationQueryService;
+    private readonly ISender _mediator;
 
-
-    public AuthenticationController(IAuthenticationCommandService authenticationCommandService, IAuthenticationQueryService authenticationQueryService)
+    public AuthenticationController(ISender mediator)
     {
-        _authenticationQueryService = authenticationQueryService;
-        _authenticationCommandService = authenticationCommandService;
+        _mediator = mediator;
     }
 
+    
+
     [HttpPost("register")]
-    public IActionResult Register(RegisterRequest request)
+    public async Task<IActionResult> Register(RegisterRequest request)
     {
-        var authResult = _authenticationCommandService.Register(
-            request.FirstName,
-            request.LastName,
-            request.Email,
-            request.Password);
+        var command = new RegisterCommand(request.FirstName,request.LastName,request.Email,request.Password);
+          var authResult = await _mediator.Send(command);
 
         var response = new AuthenticationResponse(
-            authResult.User.UserId,
-            authResult.User.FirstName,
-            authResult.User.LastName,
-            authResult.User.Email,
-            authResult.token);
+            authResult.user.UserId,
+            authResult.user.FirstName,
+            authResult.user.LastName,
+            authResult.user.Email,
+            authResult.Token);
         return Ok(response);
     }
 
     [HttpPost("login")]
-    public IActionResult Login(LoginRequest request)
+    public async Task<IActionResult> Login(LoginRequest request)
     {
-
-        var authResult = _authenticationQueryService.Login(
-            request.Email,
-            request.Password);
+        var query = new LoginQuery(request.Email, request.Password);
+        var authResult = await _mediator.Send(query);
 
         var response = new AuthenticationResponse(
-            authResult.User.UserId,
-            authResult.User.FirstName,
-            authResult.User.LastName,
-            authResult.User.Email,
-            authResult.token);
+            authResult.user.UserId,
+            authResult.user.FirstName,
+            authResult.user.LastName,
+            authResult.user.Email,
+            authResult.Token);
         return Ok(response);
     }
     

@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "xPQUrsj13Y5nSXWr+wLU/zxTTwdmZh2O/VjGsycVrxDwXl+kLWGEABdE6vWzLpmHeRviZxXdzBlbvjLZqNgOBQ==",
+  "dgSpecHash": "JDu8JW6racYkWAe1dTZqxXTc2RGVzZVDXhUYqnvw11zoeZbNDKcfYij6S/ZnfwDVelw6XbXrh6LpRCcaC/ukPA==",
   "success": true,
   "projectFilePath": "/Users/felix/Developer/BankApplication/BankApplication/BankApplication.Api.csproj",
   "expectedPackageFiles": [
     "/Users/felix/.nuget/packages/dapper/2.0.123/dapper.2.0.123.nupkg.sha512",
     "/Users/felix/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/Users/felix/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
+    "/Users/felix/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
+    "/Users/felix/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.0.0/mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "/Users/felix/.nuget/packages/microsoft.aspnetcore.openapi/7.0.1/microsoft.aspnetcore.openapi.7.0.1.nupkg.sha512",
     "/Users/felix/.nuget/packages/microsoft.aspnetcore.razor.language/6.0.11/microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
     "/Users/felix/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

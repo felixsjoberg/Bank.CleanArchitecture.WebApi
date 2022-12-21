@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "UCUPp6q7AG7ftTAKpEpAX5rU3ohCmqZ1EGz5lEqAomIDa8WQs+PxB03r7nig5HOXXoxFg7t4m5STOdup7dqRDA==",
+  "dgSpecHash": "r2yCms+GH0soR5RU2YlzW7dBn3gsm8o6XFClRBgshL2MUT1j6jY5hW43s5j/HpTEBj8vaPMGPrWpqhsFtaY2Hw==",
   "success": true,
   "projectFilePath": "/Users/felix/Developer/BankApplication/BankApplication.Application/BankApplication.Application.csproj",
   "expectedPackageFiles": [
+    "/Users/felix/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
+    "/Users/felix/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
+    "/Users/felix/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.0.0/mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "/Users/felix/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
   ],
   "logs": []

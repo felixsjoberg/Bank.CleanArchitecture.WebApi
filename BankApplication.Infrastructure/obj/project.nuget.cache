@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "4ZomcaggjjVTFAEVOVipjc45YtUDSN19MMQSVe3lKsET8CTP2+pg3cpcPKCIE/lLQ0BoHRMCP2FfK/SyHCMC7w==",
+  "dgSpecHash": "Nkyq0P2mvuQJTwK9+TPVCltbYtk/ChmfLp1fiiHudpQdBVdaMoWzih+KKIg39Ri3mbhcYSApnoBhQOKT/amNbQ==",
   "success": true,
   "projectFilePath": "/Users/felix/Developer/BankApplication/BankApplication.Infrastructure/BankApplication.Infrastructure.csproj",
   "expectedPackageFiles": [
     "/Users/felix/.nuget/packages/dapper/2.0.123/dapper.2.0.123.nupkg.sha512",
+    "/Users/felix/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
+    "/Users/felix/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
+    "/Users/felix/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.0.0/mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "/Users/felix/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/Users/felix/.nuget/packages/microsoft.extensions.configuration/7.0.0/microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "/Users/felix/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

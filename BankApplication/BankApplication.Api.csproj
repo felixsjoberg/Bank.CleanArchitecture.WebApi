@@ -19,13 +19,9 @@
   <ItemGroup>
     <None Remove="Controllers\" />
     <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
-    <None Remove="Middleware\" />
-    <None Remove="Filters\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Middleware\" />
-    <Folder Include="Filters\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BankApplication.Contracts\BankApplication.Contracts.csproj">

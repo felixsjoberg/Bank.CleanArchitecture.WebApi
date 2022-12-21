@@ -1,14 +1,12 @@
-﻿using BankApplication.Api.Filters;
-using BankApplication.Api.Middleware;
-using BankApplication.Application;
+﻿using BankApplication.Application;
 using BankApplication.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddApplication()
                 .AddInfrastructure(builder.Configuration);
 
-//builder.Services.AddControllers(options => options.Filters.Add<ErrorHandlingFilterAttribute>());
 builder.Services.AddControllers();
+//builder.Services.AddSingleton<ProblemDetailsFactory, BankApplicationProblemDetailsFactory>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -19,7 +17,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-//app.UseMiddleware<ErrorHandlingMiddleware>();
 app.UseExceptionHandler("/error");
 app.UseHttpsRedirection();
 

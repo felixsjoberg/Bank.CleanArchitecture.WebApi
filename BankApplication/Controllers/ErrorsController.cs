@@ -10,7 +10,9 @@ namespace BankApplication.Api.Controllers
         {
             //accessing the thrown exception.
             var exception = HttpContext.Features.Get<IExceptionHandlerFeature>()?.Error;
-            return Problem(title: exception?.Message,statusCode: 400);
+            return Problem();
         }
     }
 }
+
+

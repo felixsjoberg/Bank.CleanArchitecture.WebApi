@@ -2,41 +2,31 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/felix/Developer/BankApplication/BankApplication/Filters/ErrorHandlingFilterAttribute.cs" relfile="BankApplication/Filters/ErrorHandlingFilterAttribute.cs" line="11" column="1" />
+      <Breakpoint file="/Users/felix/Developer/BankApplication/BankApplication/Controllers/ErrorsController.cs" relfile="BankApplication/Controllers/ErrorsController.cs" line="9" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.BankApplication.Api PreferredExecutionTarget="/Applications/Firefox.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BankApplication/Filters/ErrorHandlingFilterAttribute.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BankApplication/Controllers/ErrorsController.cs">
     <Files>
       <File FileName="BankApplication.Domain/Models/User.cs" />
-      <File FileName="BankApplication.Application/Services/Authentication/AuthenticationService.cs" Line="26" Column="1" />
-      <File FileName="BankApplication.Infrastructure/Presistence/UserRepository.cs" Line="22" Column="1" />
-      <File FileName="BankApplication/Filters/ErrorHandlingFilterAttribute.cs" Line="16" Column="25" />
-      <File FileName="BankApplication/Middleware/ErrorHandlingMiddleware.cs" Line="39" Column="1" />
-      <File FileName="BankApplication/Program.cs" Line="18" Column="22" />
+      <File FileName="BankApplication.Application/Services/Authentication/AuthenticationService.cs" Line="31" Column="35" />
+      <File FileName="BankApplication.Infrastructure/Presistence/UserRepository.cs" />
+      <File FileName="BankApplication/Controllers/ErrorsController.cs" Line="17" Column="1" />
+      <File FileName="BankApplication/Controllers/AuthenticationController.cs" />
+      <File FileName="BankApplication/appsettings.Development.json" />
+      <File FileName="BankApplication/appsettings.json" />
+      <File FileName="BankApplication/Program.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BankApplication" expanded="True">
             <Node name="BankApplication.Api" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Filters" expanded="True">
-                <Node name="ErrorHandlingFilterAttribute.cs" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="ErrorsController.cs" selected="True" />
               </Node>
-              <Node name="Middleware" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
             </Node>
             <Node name="BankApplication.Application" expanded="True">
-              <Node name="Common" expanded="True">
-                <Node name="Interfaces" expanded="True">
-                  <Node name="Authentication" expanded="True" />
-                  <Node name="Services" expanded="True" />
-                </Node>
-              </Node>
-              <Node name="Persistence" expanded="True" />
               <Node name="Services" expanded="True">
                 <Node name="Authentication" expanded="True" />
               </Node>
@@ -44,15 +34,11 @@
             <Node name="BankApplication.Domain" expanded="True">
               <Node name="Models" expanded="True" />
             </Node>
-            <Node name="BankApplication.Infrastructure" expanded="True">
-              <Node name="Authentication" expanded="True" />
-              <Node name="Presistence" expanded="True" />
-              <Node name="Services" expanded="True" />
-            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BankApplication.Api PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

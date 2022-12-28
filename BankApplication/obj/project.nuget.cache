@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "JDu8JW6racYkWAe1dTZqxXTc2RGVzZVDXhUYqnvw11zoeZbNDKcfYij6S/ZnfwDVelw6XbXrh6LpRCcaC/ukPA==",
+  "dgSpecHash": "4GwtBoDXd2d8cPK8N3BXF1wRhre55l/4Nvlp8dcBvJMtAK7G7oqOfT4EcCGr+2hrvGhNU4IVreHb66ot0SOKUA==",
   "success": true,
   "projectFilePath": "/Users/felix/Developer/BankApplication/BankApplication/BankApplication.Api.csproj",
   "expectedPackageFiles": [
     "/Users/felix/.nuget/packages/dapper/2.0.123/dapper.2.0.123.nupkg.sha512",
     "/Users/felix/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/Users/felix/.nuget/packages/mapster/7.3.0/mapster.7.3.0.nupkg.sha512",
+    "/Users/felix/.nuget/packages/mapster.core/1.2.0/mapster.core.1.2.0.nupkg.sha512",
+    "/Users/felix/.nuget/packages/mapster.dependencyinjection/1.0.0/mapster.dependencyinjection.1.0.0.nupkg.sha512",
     "/Users/felix/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
     "/Users/felix/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
     "/Users/felix/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.0.0/mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

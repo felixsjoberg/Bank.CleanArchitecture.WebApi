@@ -267,3 +267,6 @@
 /Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/MediatR.dll
 /Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/MediatR.Contracts.dll
 /Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
+/Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Mapster.dll
+/Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Mapster.Core.dll
+/Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Mapster.DependencyInjection.dll

@@ -28,6 +28,41 @@
           }
         }
       },
+      "Mapster/7.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Mapster.Core": "1.2.0",
+          "Microsoft.CSharp": "4.3.0",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Mapster.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Mapster.dll": {}
+        }
+      },
+      "Mapster.Core/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Mapster.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Mapster.Core.dll": {}
+        }
+      },
+      "Mapster.DependencyInjection/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Mapster": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Mapster.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Mapster.DependencyInjection.dll": {}
+        }
+      },
       "MediatR/11.1.0": {
         "type": "package",
         "dependencies": {
@@ -2677,7 +2712,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.1/_._": {
+          "ref/netstandard1.1/System.Reflection.Emit.dll": {
             "related": ".xml"
           }
         },
@@ -2693,7 +2728,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.0/_._": {
+          "ref/netstandard1.0/System.Reflection.Emit.ILGeneration.dll": {
             "related": ".xml"
           }
         },
@@ -3593,6 +3628,52 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Mapster/7.3.0": {
+      "sha512": "NrCUX/rJa5PTyo6iW4AL5dZLU9PDNlYnrJOVjgdpo5OQM9EtWH2CMHnC5sSuJWC0d0b0SnmeRrIviEem6WxtuQ==",
+      "type": "package",
+      "path": "mapster/7.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard1.3/Mapster.dll",
+        "lib/netstandard2.0/Mapster.dll",
+        "mapster.7.3.0.nupkg.sha512",
+        "mapster.nuspec"
+      ]
+    },
+    "Mapster.Core/1.2.0": {
+      "sha512": "TNdqZk2zAuBYfJF88D/3clQTOyOdqr1crU81yZQtlGa+e7FYWhJdK/buBWT+TpM3qQko9UzmzfOT4iq3JCs/ZA==",
+      "type": "package",
+      "path": "mapster.core/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net40/Mapster.Core.dll",
+        "lib/net45/Mapster.Core.dll",
+        "lib/netstandard1.3/Mapster.Core.dll",
+        "lib/netstandard2.0/Mapster.Core.dll",
+        "mapster.core.1.2.0.nupkg.sha512",
+        "mapster.core.nuspec"
+      ]
+    },
+    "Mapster.DependencyInjection/1.0.0": {
+      "sha512": "nNSGrgu5GirZ8nmuFXHGct+GwXjmbAAb+UqBl3Bwx/vbkCOypuvOziC+wTaNEjz/OE6LMg8yMCZzOtl59Lxw9Q==",
+      "type": "package",
+      "path": "mapster.dependencyinjection/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net40/Mapster.DependencyInjection.dll",
+        "lib/net45/Mapster.DependencyInjection.dll",
+        "lib/netstandard1.3/Mapster.DependencyInjection.dll",
+        "lib/netstandard2.0/Mapster.DependencyInjection.dll",
+        "mapster.dependencyinjection.1.0.0.nupkg.sha512",
+        "mapster.dependencyinjection.nuspec"
       ]
     },
     "MediatR/11.1.0": {
@@ -10459,6 +10540,8 @@
       "BankApplication.Application >= 1.0.0",
       "BankApplication.Contracts >= 1.0.0",
       "BankApplication.Infrastructure >= 1.0.0",
+      "Mapster >= 7.3.0",
+      "Mapster.DependencyInjection >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.1",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.1",
       "Swashbuckle.AspNetCore >= 6.4.0"
@@ -10511,6 +10594,14 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "Mapster": {
+            "target": "Package",
+            "version": "[7.3.0, )"
+          },
+          "Mapster.DependencyInjection": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[7.0.1, )"

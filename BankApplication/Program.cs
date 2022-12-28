@@ -1,11 +1,14 @@
-﻿using BankApplication.Application;
+﻿using BankApplication.Api;
+using BankApplication.Application;
 using BankApplication.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddApplication()
+
+    builder.Services
+                .AddPresentation()
+                .AddApplication()
                 .AddInfrastructure(builder.Configuration);
 
-builder.Services.AddControllers();
 //builder.Services.AddSingleton<ProblemDetailsFactory, BankApplicationProblemDetailsFactory>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

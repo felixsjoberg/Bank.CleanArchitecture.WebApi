@@ -6,8 +6,8 @@ namespace BankApplication.Api.Controllers
 {
     public class ErrorsController : ControllerBase
     {
-        [ApiExplorerSettings(IgnoreApi = true)]
         [Route("/error")]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public IActionResult Error()
         {
             //accessing the thrown exception.
@@ -17,7 +17,7 @@ namespace BankApplication.Api.Controllers
             {
                 DuplicateEmailException => (StatusCodes.Status409Conflict, "User already exists."),
                 InvalidUser => (StatusCodes.Status404NotFound, "User doesn't exists."),
-                InvalidPassword=> (StatusCodes.Status400BadRequest, "Invalid Password or Username combination.")
+                InvalidPassword => (StatusCodes.Status400BadRequest, "Invalid Password or Username combination.")
             };
             return Problem(statusCode: statusCode, title: message);
         }

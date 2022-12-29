@@ -3,6 +3,7 @@ using BankApplication.Application.Services.Queries.Login;
 using BankApplication.Contracts.Authentication;
 using MapsterMapper;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BankApplication.Controllers;
@@ -37,7 +38,6 @@ namespace BankApplication.Controllers;
 
         return Ok(response);
     }
-
     [HttpPost("login")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]

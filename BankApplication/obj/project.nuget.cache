@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4GwtBoDXd2d8cPK8N3BXF1wRhre55l/4Nvlp8dcBvJMtAK7G7oqOfT4EcCGr+2hrvGhNU4IVreHb66ot0SOKUA==",
+  "dgSpecHash": "+gOgLe5e4FzFCigZLLCXX3rcDyrIsUiY09Gxxq/s5TSq1eDqwgziC1NfVb8D3LpSjnQ15NVxFYfaYyYZADvJ4g==",
   "success": true,
   "projectFilePath": "/Users/felix/Developer/BankApplication/BankApplication/BankApplication.Api.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "/Users/felix/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
     "/Users/felix/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
     "/Users/felix/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.0.0/mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "/Users/felix/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/7.0.1/microsoft.aspnetcore.authentication.jwtbearer.7.0.1.nupkg.sha512",
     "/Users/felix/.nuget/packages/microsoft.aspnetcore.openapi/7.0.1/microsoft.aspnetcore.openapi.7.0.1.nupkg.sha512",
     "/Users/felix/.nuget/packages/microsoft.aspnetcore.razor.language/6.0.11/microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
     "/Users/felix/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
@@ -48,6 +49,8 @@
     "/Users/felix/.nuget/packages/microsoft.identitymodel.abstractions/6.25.1/microsoft.identitymodel.abstractions.6.25.1.nupkg.sha512",
     "/Users/felix/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.25.1/microsoft.identitymodel.jsonwebtokens.6.25.1.nupkg.sha512",
     "/Users/felix/.nuget/packages/microsoft.identitymodel.logging/6.25.1/microsoft.identitymodel.logging.6.25.1.nupkg.sha512",
+    "/Users/felix/.nuget/packages/microsoft.identitymodel.protocols/6.15.1/microsoft.identitymodel.protocols.6.15.1.nupkg.sha512",
+    "/Users/felix/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/6.15.1/microsoft.identitymodel.protocols.openidconnect.6.15.1.nupkg.sha512",
     "/Users/felix/.nuget/packages/microsoft.identitymodel.tokens/6.25.1/microsoft.identitymodel.tokens.6.25.1.nupkg.sha512",
     "/Users/felix/.nuget/packages/microsoft.net.stringtools/17.3.2/microsoft.net.stringtools.17.3.2.nupkg.sha512",
     "/Users/felix/.nuget/packages/microsoft.netcore.platforms/1.1.1/microsoft.netcore.platforms.1.1.1.nupkg.sha512",

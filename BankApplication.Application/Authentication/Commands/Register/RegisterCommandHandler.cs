@@ -1,4 +1,5 @@
 ﻿using BankApplication.Application.Authentication.Common;
+using BankApplication.Application.Common.Errors;
 using BankApplication.Application.Common.Interfaces;
 using BankApplication.Application.Persistence;
 using Domain.Domains;
@@ -23,7 +24,7 @@ public class RegisterCommandHandler :
         //validate so that user doesn't exists
         if (_userRepository.GetUserByEmail(command.Email) is not null)
         {
-            throw new Exception("User Email already exists.");
+            throw new DuplicateEmailException();
         }
 
         var user = new User

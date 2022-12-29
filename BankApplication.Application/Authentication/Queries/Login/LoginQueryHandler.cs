@@ -1,5 +1,6 @@
 ﻿
 using BankApplication.Application.Authentication.Common;
+using BankApplication.Application.Common.Errors;
 using BankApplication.Application.Common.Interfaces;
 using BankApplication.Application.Persistence;
 using BankApplication.Application.Services.Commands.Register;
@@ -24,13 +25,13 @@ public class LoginQueryHandler :
     {
         if (_userRepository.GetUserByEmail(query.Email) is not User user)
         {
-            throw new Exception("User doesn't exist");
+            throw new InvalidUser();
         }
 
 
         if (user.Password != query.Password)
         {
-            throw new Exception("Invalid password");
+            throw new InvalidPassword();
         }
 
         var token = _jwtTokenGenerator.GenerateToken(user);

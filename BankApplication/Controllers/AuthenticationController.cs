@@ -26,36 +26,29 @@ namespace BankApplication.Controllers;
     
 
     [HttpPost("register")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status409Conflict)]
     public async Task<IActionResult> Register(RegisterRequest request)
     {
-        //  var command = new RegisterCommand(request.FirstName,request.LastName,request.Email,request.Password);
         var command = _mapper.Map<RegisterCommand>(request);
           var authResult = await _mediator.Send(command);
 
         var response = _mapper.Map<AuthenticationResponse>(authResult);
-        // var response = new AuthenticationResponse(
-        //     authResult.user.UserId,
-        //     authResult.user.FirstName,
-        //     authResult.user.LastName,
-        //     authResult.user.Email,
-        //     authResult.Token);
+
         return Ok(response);
     }
 
     [HttpPost("login")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> Login(LoginRequest request)
     {
-        // var query = new LoginQuery(request.Email, request.Password);
         var query = _mapper.Map<LoginQuery>(request);
         var authResult = await _mediator.Send(query);
 
         var response = _mapper.Map<AuthenticationResponse>(authResult);
-        // var response = new AuthenticationResponse(
-        //     authResult.user.UserId,
-        //     authResult.user.FirstName,
-        //     authResult.user.LastName,
-        //     authResult.user.Email,
-        //     authResult.Token);
+
         return Ok(response);
     }
     

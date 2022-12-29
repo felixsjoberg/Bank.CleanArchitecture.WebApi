@@ -270,3 +270,6 @@
 /Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Mapster.dll
 /Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Mapster.Core.dll
 /Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Mapster.DependencyInjection.dll
+/Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

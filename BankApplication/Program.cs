@@ -21,10 +21,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 app.UseExceptionHandler("/error");
+app.UseAuthentication();
 app.UseHttpsRedirection();
-
 app.UseRouting();
 app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
-
 app.Run();
 

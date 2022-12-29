@@ -1,22 +1,16 @@
-﻿<Properties StartupConfiguration="{6CF02883-E6C3-4FF6-BDF8-240A7A910FAE}|https">
-  <MultiItemStartupConfigurations />
+﻿<Properties StartupConfiguration="{1248D8EB-484D-4C6E-BC48-8BDE4949B56F}|https">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BankApplication/Common/DependencyInjection.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../.microsoft/usersecrets/93d9454d-6f73-458e-8e2c-84f47e3a20b1/secrets.json">
     <Files>
-      <File FileName="BankApplication.Application/DependencyInjection.cs" />
-      <File FileName="BankApplication.Application/Authentication/Queries/Login/LoginQuery.cs" />
-      <File FileName="BankApplication.Application/Authentication/Queries/Login/LoginQueryHandler.cs" Line="27" Column="1" />
-      <File FileName="BankApplication.Application/Authentication/Commands/Register/RegisterCommand.cs" />
       <File FileName="BankApplication.Application/Authentication/Commands/Register/RegisterCommandHandler.cs" />
-      <File FileName="BankApplication.Application/Persistence/IUserRepository.cs" />
-      <File FileName="BankApplication.Contracts/Authentication/LoginRequest.cs" />
-      <File FileName="BankApplication.Infrastructure/Presistence/UserRepository.cs" />
-      <File FileName="BankApplication.Contracts/Authentication/RegisterRequest.cs" />
+      <File FileName="BankApplication.Contracts/Authentication/LoginRequest.cs" Line="1" Column="1" />
       <File FileName="BankApplication.Infrastructure/Authentication/JwtTokenGenerator.cs" />
       <File FileName="BankApplication.Infrastructure/Authentication/JwtSettings.cs" />
-      <File FileName="BankApplication.Domain/Models/User.cs" />
-      <File FileName="BankApplication.Application/Authentication/Common/AuthenticationResult.cs" />
-      <File FileName="BankApplication.Contracts/Authentication/AuthenticationResponse.cs" />
       <File FileName="BankApplication.Infrastructure/DapperContext.cs" />
       <File FileName="BankApplication.Infrastructure/Services/DateTimeProvider.cs" />
       <File FileName="BankApplication.Application/Common/Interfaces/Authentication/IJwtTokenGenerator.cs" />
@@ -27,19 +21,37 @@
       <File FileName="BankApplication.Domain/Models/Transaction.cs" />
       <File FileName="BankApplication.Infrastructure/DependencyInjection.cs" />
       <File FileName="BankApplication.Application/Common/Interfaces/Services/IDateTimeProvider.cs" />
+      <File FileName="BankApplication/Common/DependencyInjection.cs" />
+      <File FileName="BankApplication/Program.cs" />
+      <File FileName="BankApplication/DependencyInjection.cs" />
+      <File FileName="BankApplication/Mapping/AuthenticationMappingConfig.cs" />
+      <File FileName="BankApplication.Application/Authentication/Common/AuthenticationResult.cs" />
+      <File FileName="BankApplication.Contracts/Authentication/AuthenticationResponse.cs" Line="1" Column="1" />
+      <File FileName="BankApplication.Application/Common/Errors/DuplicateEmailException.cs" />
+      <File FileName="BankApplication.Application/Common/Errors/InvalidPassword.cs" Line="6" Column="5" />
+      <File FileName="BankApplication/appsettings.json" />
+      <File FileName="BankApplication.Contracts/Authentication/RegisterRequest.cs" Line="7" Column="14" />
+      <File FileName="BankApplication.Application/Authentication/Queries/Login/LoginQuery.cs" Line="1" Column="1" />
+      <File FileName="BankApplication.Application/Authentication/Queries/Login/LoginQueryHandler.cs" Line="1" Column="1" />
       <File FileName="BankApplication/Controllers/AuthenticationController.cs" Line="1" Column="1" />
-      <File FileName="BankApplication/Controllers/ErrorsController.cs" Line="1" Column="1" />
-      <File FileName="BankApplication/Common/AuthenticationMappingConfig" Line="16" Column="2" />
-      <File FileName="BankApplication/Common/DependencyInjection.cs" Line="15" Column="37" />
+      <File FileName="../../.microsoft/usersecrets/93d9454d-6f73-458e-8e2c-84f47e3a20b1/secrets.json" Line="3" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BankApplication" expanded="True">
             <Node name="BankApplication.Api" expanded="True">
-              <Node name="Common" expanded="True">
-                <Node name="DependencyInjection.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" selected="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+            <Node name="BankApplication.Contracts" expanded="True">
+              <Node name="Authentication" expanded="True" />
+            </Node>
+            <Node name="BankApplication.Domain" expanded="True">
+              <Node name="Models" expanded="True" />
+            </Node>
+            <Node name="BankApplication.Infrastructure" expanded="True">
+              <Node name="Presistence" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -47,10 +59,4 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.BankApplication.Api PreferredExecutionTarget="/Applications/Firefox.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/felix/Developer/BankApplication/BankApplication.Application/Authentication/Queries/Login/LoginQueryHandler.cs" relfile="BankApplication.Application/Authentication/Queries/Login/LoginQueryHandler.cs" line="24" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

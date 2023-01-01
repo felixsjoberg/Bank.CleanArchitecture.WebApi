@@ -4,13 +4,13 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>9250c4b0-8148-4f1d-8ee9-8ed53e67bec1</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BankApplication.Domain\BankApplication.Domain.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="DTOs\" />
     <None Remove="Microsoft.Extensions.DependencyInjection.Abstractions" />
     <None Remove="Common\" />
     <None Remove="Common\Interfaces\" />
@@ -25,9 +25,9 @@
     <None Remove="Authentication\Queries\Login\" />
     <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
     <None Remove="Authentication\Common\" />
+    <None Remove="Microsoft.Extensions.Configuration.UserSecrets" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DTOs\" />
     <Folder Include="Common\" />
     <Folder Include="Common\Interfaces\" />
     <Folder Include="Common\Interfaces\Authentication\" />
@@ -44,5 +44,6 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
     <PackageReference Include="MediatR" Version="11.1.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="5.0.0" />
   </ItemGroup>
 </Project>

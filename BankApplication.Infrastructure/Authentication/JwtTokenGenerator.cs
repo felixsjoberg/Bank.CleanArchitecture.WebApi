@@ -28,13 +28,20 @@ public class JwtTokenGenerator : IJwtTokenGenerator
                 Encoding.UTF8.GetBytes(_jwtSettings.Secret)),
             SecurityAlgorithms.HmacSha256);
 
-        var claims = new[]
+        
+
+        var claims = new List<Claim>
         {
             new Claim(JwtRegisteredClaimNames.Sub, user.UserId.ToString()),
             new Claim(JwtRegisteredClaimNames.GivenName, user.FirstName),
             new Claim(JwtRegisteredClaimNames.FamilyName, user.LastName),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
         };
+
+        // To get adminstrator role.
+        //if (user.Password.StartsWith("Adminstrator911"))
+        //    claims.Add(new Claim(ClaimTypes.Role, "Admin"));
+        
 
         var securityToken = new JwtSecurityToken(
             issuer:_jwtSettings.Issuer,

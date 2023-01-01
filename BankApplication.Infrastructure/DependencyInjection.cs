@@ -19,20 +19,29 @@ public static class DependencyInjection
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, ConfigurationManager configuration)
     {
         services.AddAuth(configuration);
+        services.AddContext(configuration);
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
-
         services.AddScoped<IUserRepository, UserRepository>();
         return services;
     }
 
+    public static IServiceCollection AddContext(
+        this IServiceCollection services, ConfigurationManager configuration)
+    {
+        var DapperSettings = new DapperSettings();
+        configuration.Bind(DapperSettings.SectionName, DapperSettings);
+        services.AddSingleton(Options.Create(DapperSettings));
+        services.AddSingleton<DapperContext>();
 
-    public static IServiceCollection AddAuth(
+        return services;
+    }
+
+        public static IServiceCollection AddAuth(
         this IServiceCollection services, ConfigurationManager configuration)
     {
         var JwtSettings = new JwtSettings();
         configuration.Bind(JwtSettings.SectionName, JwtSettings);
 
-        //services.Configure<JwtSettings>(configuration.GetSection(JwtSettings.SectionName));
         services.AddSingleton(Options.Create(JwtSettings));
         services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
 

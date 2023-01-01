@@ -1,20 +1,19 @@
 ﻿<Properties StartupConfiguration="{1248D8EB-484D-4C6E-BC48-8BDE4949B56F}|https">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.BankApplication.Api PreferredExecutionTarget="/Applications/Firefox.app" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/felix/Developer/BankApplication/BankApplication/Controllers/AccountsController.cs" relfile="BankApplication/Controllers/AccountsController.cs" line="11" column="1" />
-      <Breakpoint file="/Users/felix/Developer/BankApplication/BankApplication/Program.cs" relfile="BankApplication/Program.cs" line="23" column="1" />
+      <Breakpoint file="/Users/felix/Developer/BankApplication/BankApplication.Application/Authentication/Commands/Register/RegisterCommandHandler.cs" relfile="BankApplication.Application/Authentication/Commands/Register/RegisterCommandHandler.cs" line="25" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="BankApplication/Program.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BankApplication.Api PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BankApplication.Infrastructure/Presistence/UserRepository.cs">
     <Files>
-      <File FileName="BankApplication.Application/Authentication/Commands/Register/RegisterCommandHandler.cs" Line="1" Column="1" />
+      <File FileName="BankApplication.Application/Authentication/Commands/Register/RegisterCommandHandler.cs" Line="25" Column="1" />
       <File FileName="BankApplication.Contracts/Authentication/LoginRequest.cs" />
-      <File FileName="BankApplication.Infrastructure/Authentication/JwtTokenGenerator.cs" Line="50" Column="1" />
-      <File FileName="BankApplication.Infrastructure/Authentication/JwtSettings.cs" Line="6" Column="1" />
-      <File FileName="BankApplication.Infrastructure/DapperContext.cs" />
+      <File FileName="BankApplication.Infrastructure/Authentication/JwtTokenGenerator.cs" Line="22" Column="1" />
+      <File FileName="BankApplication.Infrastructure/Authentication/JwtSettings.cs" Line="6" Column="19" />
       <File FileName="BankApplication.Infrastructure/Services/DateTimeProvider.cs" />
       <File FileName="BankApplication.Application/Common/Interfaces/Authentication/IJwtTokenGenerator.cs" />
       <File FileName="BankApplication.Domain/Models/Account.cs" />
@@ -22,26 +21,34 @@
       <File FileName="BankApplication.Domain/Models/Customer.cs" />
       <File FileName="BankApplication.Domain/Models/Loan.cs" />
       <File FileName="BankApplication.Domain/Models/Transaction.cs" />
-      <File FileName="BankApplication.Infrastructure/DependencyInjection.cs" Line="33" Column="1" />
+      <File FileName="BankApplication.Infrastructure/DependencyInjection.cs" Line="22" Column="42" />
       <File FileName="BankApplication.Application/Common/Interfaces/Services/IDateTimeProvider.cs" />
       <File FileName="BankApplication/Common/DependencyInjection.cs" />
-      <File FileName="BankApplication/Program.cs" Line="31" Column="1" />
+      <File FileName="BankApplication/Program.cs" Line="32" Column="1" />
       <File FileName="BankApplication/DependencyInjection.cs" />
       <File FileName="BankApplication/Mapping/AuthenticationMappingConfig.cs" />
-      <File FileName="BankApplication.Application/Authentication/Common/AuthenticationResult.cs" />
+      <File FileName="BankApplication.Application/Authentication/Common/AuthenticationResult.cs" Line="1" Column="1" />
       <File FileName="BankApplication.Contracts/Authentication/AuthenticationResponse.cs" />
       <File FileName="BankApplication.Application/Common/Errors/DuplicateEmailException.cs" />
       <File FileName="BankApplication.Application/Common/Errors/InvalidPassword.cs" />
-      <File FileName="BankApplication/appsettings.json" Line="20" Column="1" />
+      <File FileName="BankApplication/appsettings.json" Line="17" Column="6" />
       <File FileName="BankApplication.Contracts/Authentication/RegisterRequest.cs" />
       <File FileName="BankApplication.Application/Authentication/Queries/Login/LoginQuery.cs" />
-      <File FileName="BankApplication.Application/Authentication/Queries/Login/LoginQueryHandler.cs" />
-      <File FileName="BankApplication/Controllers/AuthenticationController.cs" Line="1" Column="1" />
-      <File FileName="../../.microsoft/usersecrets/93d9454d-6f73-458e-8e2c-84f47e3a20b1/secrets.json" Line="3" Column="2" />
-      <File FileName="BankApplication/Controllers/AccountsController.cs" Line="16" Column="18" />
-      <File FileName="BankApplication/Controllers/ErrorsController.cs" Line="22" Column="28" />
-      <File FileName="BankApplication/Properties/launchSettings.json" Line="1" Column="1" />
-      <File FileName="BankApplication/appsettings.Development.json" Line="9" Column="86" />
+      <File FileName="BankApplication.Application/Authentication/Queries/Login/LoginQueryHandler.cs" Line="26" Column="31" />
+      <File FileName="BankApplication/Controllers/AuthenticationController.cs" Line="35" Column="1" />
+      <File FileName="BankApplication/Controllers/AccountsController.cs" />
+      <File FileName="BankApplication/Controllers/ErrorsController.cs" Line="23" Column="1" />
+      <File FileName="BankApplication/Properties/launchSettings.json" />
+      <File FileName="BankApplication/appsettings.Development.json" Line="14" Column="5" />
+      <File FileName="BankApplication.Application/Authentication/Commands/Register/RegisterCommand.cs" />
+      <File FileName="BankApplication.Infrastructure/Presistence/UserRepository.cs" Line="59" Column="1" />
+      <File FileName="BankApplication.Domain/Models/Card.cs" />
+      <File FileName="BankApplication.Domain/Models/Disposition.cs" />
+      <File FileName="BankApplication.Domain/Models/User.cs" Line="1" Column="1" />
+      <File FileName="BankApplication.Application/Common/Interfaces/Persistence/IUserRepository.cs" Line="8" Column="11" />
+      <File FileName="../../.microsoft/usersecrets/93d9454d-6f73-458e-8e2c-84f47e3a20b1/secrets.json" Line="3" Column="17" />
+      <File FileName="BankApplication.Infrastructure/Presistence/DapperSettings.cs" Line="8" Column="1" />
+      <File FileName="BankApplication.Infrastructure/Presistence/DapperContext.cs" Line="20" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -49,28 +56,39 @@
           <Node name="BankApplication" expanded="True">
             <Node name="BankApplication.Api" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Properties" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
-              <Node name="Program.cs" selected="True" />
             </Node>
             <Node name="BankApplication.Application" expanded="True">
               <Node name="Authentication" expanded="True">
                 <Node name="Commands" expanded="True">
                   <Node name="Register" expanded="True" />
                 </Node>
+                <Node name="Common" expanded="True" />
+                <Node name="Queries" expanded="True">
+                  <Node name="Login" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Common" expanded="True">
+                <Node name="Interfaces" expanded="True">
+                  <Node name="Authentication" expanded="True" />
+                  <Node name="Persistence" expanded="True" />
+                </Node>
               </Node>
             </Node>
-            <Node name="BankApplication.Contracts" expanded="True">
-              <Node name="Authentication" expanded="True" />
+            <Node name="BankApplication.Contracts" expanded="True" />
+            <Node name="BankApplication.Domain" expanded="True">
+              <Node name="Models" expanded="True" />
             </Node>
             <Node name="BankApplication.Infrastructure" expanded="True">
               <Node name="Authentication" expanded="True" />
-              <Node name="Presistence" expanded="True" />
+              <Node name="Presistence" expanded="True">
+                <Node name="UserRepository.cs" selected="True" />
+              </Node>
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

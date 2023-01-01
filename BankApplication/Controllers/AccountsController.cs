@@ -10,7 +10,7 @@ namespace BankApplication.Api.Controllers
 {
     [Route("api/accounts")]
     [ApiController]
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class AccountsController : ControllerBase
     {
         [HttpGet]

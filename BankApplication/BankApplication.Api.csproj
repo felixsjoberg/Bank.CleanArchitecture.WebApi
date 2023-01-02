@@ -23,6 +23,7 @@
     <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
     <None Remove="Mapster.DependencyInjection" />
     <None Remove="Mapping\" />
+    <None Remove="Mapping\get" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />

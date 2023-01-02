@@ -26,6 +26,14 @@
     <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
     <None Remove="Authentication\Common\" />
     <None Remove="Microsoft.Extensions.Configuration.UserSecrets" />
+    <None Remove="Customers\" />
+    <None Remove="Customers\Commands\" />
+    <None Remove="Customers\Queries\" />
+    <None Remove="Customers\DTOs\" />
+    <None Remove="Customers\DTOs\Queries\" />
+    <None Remove="Customers\DTOs\Commands\" />
+    <None Remove="Customers\Commands\Transaction\" />
+    <None Remove="Customers\Queries\Accounts\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
@@ -39,6 +47,14 @@
     <Folder Include="Authentication\Queries\" />
     <Folder Include="Authentication\Queries\Login\" />
     <Folder Include="Authentication\Common\" />
+    <Folder Include="Customers\" />
+    <Folder Include="Customers\Commands\" />
+    <Folder Include="Customers\Queries\" />
+    <Folder Include="Customers\DTOs\" />
+    <Folder Include="Customers\DTOs\Queries\" />
+    <Folder Include="Customers\DTOs\Commands\" />
+    <Folder Include="Customers\Commands\Transaction\" />
+    <Folder Include="Customers\Queries\Accounts\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />

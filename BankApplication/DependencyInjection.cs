@@ -1,5 +1,6 @@
 ﻿
 using BankApplication.Api.Common.Mapping;
+using MediatR;
 
 namespace BankApplication.Api;
 

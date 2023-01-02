@@ -8,8 +8,10 @@
 
   <ItemGroup>
     <None Remove="Authentication\" />
+    <None Remove="Customers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Authentication\" />
+    <Folder Include="Customers\" />
   </ItemGroup>
 </Project>

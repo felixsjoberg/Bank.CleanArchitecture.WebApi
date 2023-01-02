@@ -8,12 +8,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BankApplication.Controllers;
 
-
-
-
 [Route("auth")]
   [ApiController]
-  public class AuthenticationController : ControllerBase
+  public class AuthenticationController : ControllerBase 
   {
     private readonly ISender _mediator;
     private readonly IMapper _mapper;
@@ -23,8 +20,6 @@ namespace BankApplication.Controllers;
         _mediator = mediator;
         _mapper = mapper;
     }
-
-    
 
     [HttpPost("register")]
     [ProducesResponseType(StatusCodes.Status200OK)]
@@ -51,5 +46,5 @@ namespace BankApplication.Controllers;
 
         return Ok(response);
     }
-    
-  }
+
+}

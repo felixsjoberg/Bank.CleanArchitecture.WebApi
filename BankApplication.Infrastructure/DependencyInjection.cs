@@ -1,6 +1,7 @@
 ﻿
 using System.Text;
 using BankApplication.Application.Common.Interfaces;
+using BankApplication.Application.Common.Interfaces.Persistence;
 using BankApplication.Application.Common.Interfaces.Services;
 using BankApplication.Application.Persistence;
 using BankApplication.Infrastructure.Authentication;
@@ -22,6 +23,8 @@ public static class DependencyInjection
         services.AddContext(configuration);
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
         services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<ICustomersRepository, CustomerRepository>();
+
         return services;
     }
 

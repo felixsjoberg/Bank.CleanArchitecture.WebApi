@@ -1,6 +1,8 @@
 ﻿using BankApplication.Api;
 using BankApplication.Application;
+using BankApplication.Application.Customers.Queries;
 using BankApplication.Infrastructure;
+using MediatR;
 
 var builder = WebApplication.CreateBuilder(args);
 

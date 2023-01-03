@@ -16,20 +16,23 @@ public class CustomerRepository : ICustomersRepository
         _context = context;
     }
 
-    public Task<Account> GetAccountById(Account accountId)
-    {
-        throw new NotImplementedException();
-    }
-
-    public async Task<List<Account>> GetAccounts(Guid userId)
+    public async Task<Account> GetAccountById(int accountId)
     {
         using (var db = _context.CreateConnection())
         {
-            return (List<Account>)await db.QueryAsync<Account>("GetAccounts", new { userId }, commandType: CommandType.StoredProcedure);
+            return await db.QuerySingleAsync<Account>("GetAccountById", new { accountId }, commandType: CommandType.StoredProcedure);
         }
     }
 
-    public Task<Account> PostTransaction(Account accountId)
+    public async Task<IEnumerable<Account>> GetAccounts(Guid userId)
+    {
+        using (var db = _context.CreateConnection())
+        {
+            return await db.QueryAsync<Account>("GetAccounts", new { userId }, commandType: CommandType.StoredProcedure);
+        }
+    }
+
+    public Task<Account> PostTransaction(int accountId)
     {
         throw new NotImplementedException();
     }

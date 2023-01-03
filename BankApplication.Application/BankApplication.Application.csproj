@@ -16,7 +16,6 @@
     <None Remove="Common\Interfaces\" />
     <None Remove="Common\Interfaces\Authentication\" />
     <None Remove="Common\Interfaces\Services\" />
-    <None Remove="Persistence\" />
     <None Remove="MediatR" />
     <None Remove="Authentication\" />
     <None Remove="Authentication\Commands\" />
@@ -29,18 +28,16 @@
     <None Remove="Customers\" />
     <None Remove="Customers\Commands\" />
     <None Remove="Customers\Queries\" />
-    <None Remove="Customers\DTOs\" />
-    <None Remove="Customers\DTOs\Queries\" />
-    <None Remove="Customers\DTOs\Commands\" />
     <None Remove="Customers\Commands\Transaction\" />
     <None Remove="Customers\Queries\Accounts\" />
+    <None Remove="Customers\Queries\GetAccountById\" />
+    <None Remove="Customers\Queries\GetAccounts\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
     <Folder Include="Common\Interfaces\" />
     <Folder Include="Common\Interfaces\Authentication\" />
     <Folder Include="Common\Interfaces\Services\" />
-    <Folder Include="Persistence\" />
     <Folder Include="Authentication\" />
     <Folder Include="Authentication\Commands\" />
     <Folder Include="Authentication\Commands\Register\" />
@@ -50,11 +47,10 @@
     <Folder Include="Customers\" />
     <Folder Include="Customers\Commands\" />
     <Folder Include="Customers\Queries\" />
-    <Folder Include="Customers\DTOs\" />
-    <Folder Include="Customers\DTOs\Queries\" />
-    <Folder Include="Customers\DTOs\Commands\" />
     <Folder Include="Customers\Commands\Transaction\" />
     <Folder Include="Customers\Queries\Accounts\" />
+    <Folder Include="Customers\Queries\GetAccountById\" />
+    <Folder Include="Customers\Queries\GetAccounts\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />

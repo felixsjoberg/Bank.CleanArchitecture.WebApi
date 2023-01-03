@@ -1,6 +1,6 @@
 ﻿using Domain.Models;
 
-namespace BankApplication.Application.Customers.Queries;
+namespace BankApplication.Application.Customers.Response.Queries;
 
-public record GetAccountsResult(List<Account> account);
+public record GetAccountsResult(IEnumerable<Account> account);
 

@@ -1,14 +1,10 @@
-﻿using System;
-using BankApplication.Application.Authentication.Common;
-using BankApplication.Application.Common.Errors;
+﻿using BankApplication.Application.Common.Errors;
 using BankApplication.Application.Common.Interfaces.Persistence;
-using BankApplication.Application.Persistence;
-using BankApplication.Application.Services.Queries.Login;
-using Domain.Domains;
+using BankApplication.Application.Customers.Response.Queries;
 using MediatR;
 
 
-namespace BankApplication.Application.Customers.Queries;
+namespace BankApplication.Application.Customers.Queries.GetAccounts;
 
 public class GetAccountsQueryHandler : IRequestHandler<GetAccountsQuery, GetAccountsResult>
 {

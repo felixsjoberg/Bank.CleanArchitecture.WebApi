@@ -38,7 +38,7 @@ public class UserRepository : IUserRepository
             {
             return db.QuerySingle<User>("GetUserByEmail", new { email }, commandType: CommandType.StoredProcedure);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return null;
             }

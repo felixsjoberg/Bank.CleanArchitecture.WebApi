@@ -35,12 +35,12 @@ public class CustomersController : ControllerBase
     }
 
     [HttpGet("id")]
-    public async Task<IActionResult> GetAccountById(GetAccountByIdRequest request)
+    public async Task<IActionResult> GetAccountById([FromQuery]GetAccountByIdRequest request)
     {
         var query = new GetAccountByIdQuery(request.AccountId);
         var authResult = await _mediator.Send(query);
 
-        var response = _mapper.Map<GetAccountsResponse>(authResult);
+        var response = _mapper.Map<GetAccountByIdResponse>(authResult);
 
         return Ok(response);
     }

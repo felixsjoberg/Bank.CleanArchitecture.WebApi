@@ -3,6 +3,8 @@ using BankApplication.Application.Common.Errors;
 using BankApplication.Application.Common.Interfaces.Persistence;
 using BankApplication.Application.Customers.Queries.GetAccounts;
 using BankApplication.Application.Customers.Response.Queries;
+using Domain.Domains;
+using Domain.Models;
 using MediatR;
 
 namespace BankApplication.Application.Customers.Queries.GetAccountById;
@@ -18,9 +20,9 @@ public class GetAccountByIdHandler : IRequestHandler<GetAccountByIdQuery, GetAcc
 
     public async Task<GetAccountByIdResult> Handle(GetAccountByIdQuery query, CancellationToken cancellationToken)
     {
-        if (query.AccountId != 0)
+        if (query.AccountId == 0)
         {
-            throw new InvalidUser();
+            throw new InvalidAccount();
         }
         var result = await _customerRepository.GetAccountById(query.AccountId);
 

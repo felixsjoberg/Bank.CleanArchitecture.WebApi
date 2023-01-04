@@ -16,11 +16,12 @@ public class CustomerRepository : ICustomersRepository
         _context = context;
     }
 
-    public async Task<Account> GetAccountById(int accountId)
+
+    public async Task<IEnumerable<AccountAggregate>> GetAccountById(int accountId)
     {
         using (var db = _context.CreateConnection())
         {
-            return await db.QuerySingleAsync<Account>("GetAccountById", new { accountId }, commandType: CommandType.StoredProcedure);
+            return await db.QueryAsync<AccountAggregate>("GetTransactionsByAccId", new { accountId }, commandType: CommandType.StoredProcedure);
         }
     }
 

@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Aggregates\" />
     <None Remove="Entities\" />
+    <None Remove="AccountAggregate\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Aggregates\" />
     <Folder Include="Entities\" />
+    <Folder Include="AccountAggregate\" />
   </ItemGroup>
 </Project>

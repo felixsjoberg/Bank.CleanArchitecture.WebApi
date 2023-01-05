@@ -22,7 +22,7 @@ public class RegisterCommandHandler :
     public async Task<AuthenticationResult> Handle(RegisterCommand command, CancellationToken cancellationToken)
     {
         //validate so that user doesn't exists
-        if (_userRepository.GetUserByEmail(command.Email) is not null)
+        if (await _userRepository.GetUserByEmail(command.Email) is not null)
         {
             throw new DuplicateEmailException();
         }

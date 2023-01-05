@@ -19,6 +19,8 @@ namespace BankApplication.Api.Controllers
                 InvalidUser => (StatusCodes.Status404NotFound, "User doesn't exists."),
                 InvalidAccount => (StatusCodes.Status404NotFound, "Invalid UserAccount."),
                 InvalidPassword => (StatusCodes.Status400BadRequest, "Invalid Password or Username combination."),
+                InvalidFrequency => (StatusCodes.Status400BadRequest, "Invalid Frequency or UserId."),
+
             };
             return Problem(statusCode: statusCode, title: message);
         }

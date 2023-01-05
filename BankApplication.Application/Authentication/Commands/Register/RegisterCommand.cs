@@ -7,5 +7,5 @@ public record RegisterCommand(
     string FirstName,
     string LastName,
     string Email,
-    string Password): IRequest<AuthenticationResult>; //What will be returned
+    string Password): IRequest<AuthenticationResult>;
 

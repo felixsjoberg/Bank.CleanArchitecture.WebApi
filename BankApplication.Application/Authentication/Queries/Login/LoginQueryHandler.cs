@@ -23,7 +23,7 @@ public class LoginQueryHandler :
 
     public async Task<AuthenticationResult> Handle(LoginQuery query, CancellationToken cancellationToken)
     {
-        if (_userRepository.GetUserByEmail(query.Email) is not User user)
+        if (await _userRepository.GetUserByEmail(query.Email) is not User user)
         {
             throw new InvalidUser();
         }

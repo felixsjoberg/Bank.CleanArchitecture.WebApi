@@ -16,6 +16,25 @@ public class CustomerRepository : ICustomersRepository
         _context = context;
     }
 
+    public async Task<Account?> CreateAccount(Guid userId, string frequency)
+    {
+        using (var db = _context.CreateConnection())
+        {
+            try
+            {
+            DynamicParameters parameters = new DynamicParameters();
+            parameters.Add("@userId", userId);
+            parameters.Add("@frequency", frequency);
+            var result= await db.QuerySingleAsync<Account>("CreateAccount", parameters, commandType: CommandType.StoredProcedure);
+            return result;
+
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+    }
 
     public async Task<IEnumerable<AccountAggregate>> GetAccountById(int accountId)
     {

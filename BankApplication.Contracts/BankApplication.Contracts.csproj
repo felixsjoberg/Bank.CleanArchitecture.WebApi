@@ -9,9 +9,17 @@
   <ItemGroup>
     <None Remove="Authentication\" />
     <None Remove="Customers\" />
+    <None Remove="Customers\GetAccounts\" />
+    <None Remove="Customers\GetAccount\" />
+    <None Remove="Customers\PostTransaction\" />
+    <None Remove="Customers\CreateAccount\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Authentication\" />
     <Folder Include="Customers\" />
+    <Folder Include="Customers\GetAccounts\" />
+    <Folder Include="Customers\GetAccount\" />
+    <Folder Include="Customers\PostTransaction\" />
+    <Folder Include="Customers\CreateAccount\" />
   </ItemGroup>
 </Project>

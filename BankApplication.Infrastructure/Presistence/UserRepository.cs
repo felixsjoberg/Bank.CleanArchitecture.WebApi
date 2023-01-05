@@ -30,13 +30,13 @@ public class UserRepository : IUserRepository
         }
     }
 
-    public User? GetUserByEmail(string email)
+    public async Task<User?> GetUserByEmail(string email)
     {
         using (var db = _context.CreateConnection())
         {
             try
             {
-            return db.QuerySingle<User>("GetUserByEmail", new { email }, commandType: CommandType.StoredProcedure);
+                return await db.QuerySingleAsync<User>("GetUserByEmail", new { email }, commandType: CommandType.StoredProcedure);
             }
             catch (Exception)
             {

@@ -17,11 +17,11 @@ public class GetAccountsQueryHandler : IRequestHandler<GetAccountsQuery, GetAcco
 
     public async Task<GetAccountsResult> Handle(GetAccountsQuery query, CancellationToken cancellationToken)
     {
-        if (query.userId == Guid.Empty)
+        if (query.UserId == Guid.Empty)
         {
             throw new InvalidUser();
         }
-        var result = await _customerRepository.GetAccounts(query.userId);
+        var result = await _customerRepository.GetAccounts(query.UserId);
 
         return new GetAccountsResult(result);
         

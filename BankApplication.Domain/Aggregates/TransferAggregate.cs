@@ -1,8 +1,10 @@
 ﻿using System;
-namespace Domain.Models;
+namespace BankApplication.Domain.Aggregates;
 
-public class AccountAggregate
+public class TransferAggregate
 {
+    public string? AccountId { get; set; }
+
     public int TransactionId { get; set; }
 
     public DateTime Date { get; set; }
@@ -21,3 +23,6 @@ public class AccountAggregate
 
     public string? Account { get; set; }
 }
+
+
+

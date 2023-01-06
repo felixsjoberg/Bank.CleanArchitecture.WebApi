@@ -10,12 +10,13 @@ public record GetAccountByIdResponse(
     List<AccountTransactionsResponse> Transactions);
 
 public record AccountTransactionsResponse(
-    string Account,
     int TransactionId,
+    string AccountId,
     DateTime Date,
     string Type,
     string Operation,
     decimal Amount,
-    decimal Balance
+    decimal Balance,
+    string Account
     );
 

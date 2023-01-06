@@ -1,5 +1,4 @@
-﻿using System;
-using Domain.Models;
+﻿using BankApplication.Domain.Aggregates;
 
 namespace BankApplication.Application.Customers.Response.Queries;
 

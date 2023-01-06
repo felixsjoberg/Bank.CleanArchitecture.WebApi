@@ -1,10 +1,6 @@
-﻿using System;
-using BankApplication.Application.Common.Errors;
+﻿using BankApplication.Application.Common.Errors;
 using BankApplication.Application.Common.Interfaces.Persistence;
-using BankApplication.Application.Customers.Queries.GetAccounts;
 using BankApplication.Application.Customers.Response.Queries;
-using Domain.Domains;
-using Domain.Models;
 using MediatR;
 
 namespace BankApplication.Application.Customers.Queries.GetAccountById;

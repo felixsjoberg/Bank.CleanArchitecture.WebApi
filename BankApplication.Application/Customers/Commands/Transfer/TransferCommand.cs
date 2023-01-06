@@ -5,7 +5,12 @@ using MediatR;
 
 namespace BankApplication.Application.Customers.Commands;
 
-public record PostTransactionCommand : IRequest<PostTransactionResult>;
+public record TransferCommand(
+    Guid UserId,
+    int AccountId,
+    int Operation,
+    decimal Amount,
+    string Account) : IRequest<TransferResult>;
 
 
 

@@ -40,6 +40,19 @@ public class CustomersController : ControllerBase
         return Ok(response);
     }
 
+    [HttpPost("transfer")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<IActionResult> Transfer(TransferRequest request)
+    {
+        var command = _mapper.Map<TransferCommand>(request);
+        var authResult = await _mediator.Send(command);
+
+        var response = _mapper.Map<TransferResponse>(authResult);
+
+        return Ok(response);
+    }
+
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]

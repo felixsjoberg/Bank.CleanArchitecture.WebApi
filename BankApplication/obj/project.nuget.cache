@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SUL67vsVR30iX+78T34AVaBaj3u0hPgoJqczz7srshk0TafEux9AF/86/rCHCM+dbRmQqw9WKFJIm+9EvQjpFQ==",
+  "dgSpecHash": "I0pzdEtNI3jxzT3SFcLk6uULygq4NuhrgQG/kwGIgIIcw84DNSDiicdfrIjaD9o+f6+HIeLsDDVvNrGM1YPdeA==",
   "success": true,
   "projectFilePath": "/Users/felix/Developer/BankApplication/BankApplication/BankApplication.Api.csproj",
   "expectedPackageFiles": [
@@ -46,6 +46,7 @@
     "/Users/felix/.nuget/packages/microsoft.extensions.configuration.usersecrets/5.0.0/microsoft.extensions.configuration.usersecrets.5.0.0.nupkg.sha512",
     "/Users/felix/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "/Users/felix/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/felix/.nuget/packages/microsoft.extensions.dependencymodel/3.1.6/microsoft.extensions.dependencymodel.3.1.6.nupkg.sha512",
     "/Users/felix/.nuget/packages/microsoft.extensions.fileproviders.abstractions/5.0.0/microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
     "/Users/felix/.nuget/packages/microsoft.extensions.fileproviders.physical/5.0.0/microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
     "/Users/felix/.nuget/packages/microsoft.extensions.filesystemglobbing/5.0.0/microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
@@ -103,7 +104,10 @@
     "/Users/felix/.nuget/packages/runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0/runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "/Users/felix/.nuget/packages/runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0/runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "/Users/felix/.nuget/packages/runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0/runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "/Users/felix/.nuget/packages/scrutor/3.3.0/scrutor.3.3.0.nupkg.sha512",
     "/Users/felix/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "/Users/felix/.nuget/packages/swashbuckle.aspnetcore.filters/7.0.6/swashbuckle.aspnetcore.filters.7.0.6.nupkg.sha512",
+    "/Users/felix/.nuget/packages/swashbuckle.aspnetcore.filters.abstractions/7.0.6/swashbuckle.aspnetcore.filters.abstractions.7.0.6.nupkg.sha512",
     "/Users/felix/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "/Users/felix/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
     "/Users/felix/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",

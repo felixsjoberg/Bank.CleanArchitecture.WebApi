@@ -1,4 +1,4 @@
-﻿namespace BankApplication.Application.Customers.Queries;
+﻿namespace BankApplication.Application.Customers;
 
 public record GetAccountsResponse(
     List<AccountsListResponse> Accounts);

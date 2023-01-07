@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace BankApplication.Application.Customers.DTOs.Commands;
+namespace BankApplication.Application.Customers;
 
 public record CreateAccountResponse(
         int AccountId,

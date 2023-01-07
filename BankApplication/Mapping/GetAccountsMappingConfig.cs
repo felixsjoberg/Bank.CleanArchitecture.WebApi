@@ -1,8 +1,5 @@
-﻿using System;
-using BankApplication.Application.Authentication.Common;
-using BankApplication.Application.Customers.Queries;
+﻿using BankApplication.Application.Customers;
 using BankApplication.Application.Customers.Response.Queries;
-using BankApplication.Contracts.Authentication;
 using Mapster;
 
 namespace BankApplication.Api.Mapping;

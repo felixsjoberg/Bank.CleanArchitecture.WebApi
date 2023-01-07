@@ -1,8 +1,6 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 using BankApplication.Application.Common.Errors;
 using BankApplication.Application.Common.Interfaces.Persistence;
-using BankApplication.Application.Customers.Queries;
 using BankApplication.Application.Customers.Response.Commands;
 using MediatR;
 

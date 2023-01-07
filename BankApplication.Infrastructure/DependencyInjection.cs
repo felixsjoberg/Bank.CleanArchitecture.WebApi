@@ -3,7 +3,6 @@ using System.Text;
 using BankApplication.Application.Common.Interfaces;
 using BankApplication.Application.Common.Interfaces.Persistence;
 using BankApplication.Application.Common.Interfaces.Services;
-using BankApplication.Application.Persistence;
 using BankApplication.Infrastructure.Authentication;
 using BankApplication.Infrastructure.Presistence;
 using BankApplication.Infrastructure.Services;
@@ -33,6 +32,7 @@ public static class DependencyInjection
         this IServiceCollection services)
     {
         services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IAdminstratorRepository, AdminstratorRepository>();
         services.AddScoped<ICustomersRepository, CustomerRepository>();
         return services;
     }

@@ -1,14 +1,10 @@
+using BankApplication.Application.Customers;
 using BankApplication.Application.Customers.Commands;
-using BankApplication.Application.Customers.DTOs.Commands;
-using BankApplication.Application.Customers.Queries;
 using BankApplication.Application.Customers.Queries.GetAccountById;
 using BankApplication.Application.Customers.Queries.GetAccounts;
-using BankApplication.Application.Services.Commands.Register;
-using BankApplication.Contracts.Authentication;
 using BankApplication.Contracts.Customers;
 using MapsterMapper;
 using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BankApplication.Api.Controllers;

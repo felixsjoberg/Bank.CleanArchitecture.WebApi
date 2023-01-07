@@ -22,6 +22,7 @@
     <None Remove="Microsoft.Extensions.Options.ConfigurationExtensions" />
     <None Remove="Presistence\" />
     <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
+    <None Remove="DbContext\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.123" />
@@ -36,5 +37,6 @@
     <Folder Include="Authentication\" />
     <Folder Include="Services\" />
     <Folder Include="Presistence\" />
+    <Folder Include="DbContext\" />
   </ItemGroup>
 </Project>

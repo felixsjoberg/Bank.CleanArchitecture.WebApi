@@ -36,12 +36,13 @@ public class JwtTokenGenerator : IJwtTokenGenerator
             new Claim(JwtRegisteredClaimNames.GivenName, user.FirstName),
             new Claim(JwtRegisteredClaimNames.FamilyName, user.LastName),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+
         };
 
-        // To get adminstrator role.
-        //if (user.Password.StartsWith("Adminstrator911"))
-        //    claims.Add(new Claim(ClaimTypes.Role, "Admin"));
-        
+        //To get adminstrator role.
+        if (user.Email.StartsWith("felixsjoberg95@gmail.com"))
+            claims.Add(new Claim(ClaimTypes.Role, "Admin"));
+
 
         var securityToken = new JwtSecurityToken(
             issuer:_jwtSettings.Issuer,

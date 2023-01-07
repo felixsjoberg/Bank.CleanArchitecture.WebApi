@@ -11,15 +11,19 @@
     <None Remove="Customers\" />
     <None Remove="Customers\GetAccounts\" />
     <None Remove="Customers\GetAccount\" />
-    <None Remove="Customers\PostTransaction\" />
     <None Remove="Customers\CreateAccount\" />
+    <None Remove="Adminstrator\" />
+    <None Remove="Adminstrator\AddAccountCredit\" />
+    <None Remove="Adminstrator\CreateCustomerAccount\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Authentication\" />
     <Folder Include="Customers\" />
     <Folder Include="Customers\GetAccounts\" />
     <Folder Include="Customers\GetAccount\" />
-    <Folder Include="Customers\PostTransaction\" />
     <Folder Include="Customers\CreateAccount\" />
+    <Folder Include="Adminstrator\" />
+    <Folder Include="Adminstrator\AddAccountCredit\" />
+    <Folder Include="Adminstrator\CreateCustomerAccount\" />
   </ItemGroup>
 </Project>

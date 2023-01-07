@@ -1,12 +1,6 @@
-﻿using System;
-using BankApplication.Application.Authentication.Common;
-using BankApplication.Application.Common.Errors;
-using BankApplication.Application.Common.Interfaces;
+﻿using BankApplication.Application.Common.Errors;
 using BankApplication.Application.Common.Interfaces.Persistence;
-using BankApplication.Application.Customers.Queries;
 using BankApplication.Application.Customers.Response.Commands;
-using BankApplication.Application.Customers.Response.Queries;
-using BankApplication.Application.Persistence;
 using Domain.Domains;
 using Domain.Models;
 using MediatR;

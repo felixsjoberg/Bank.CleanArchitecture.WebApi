@@ -1,7 +1,7 @@
 ﻿using System;
 using Domain.Domains;
 
-namespace BankApplication.Application.Persistence;
+namespace BankApplication.Application.Common.Interfaces.Persistence;
 
 public interface IUserRepository
 {

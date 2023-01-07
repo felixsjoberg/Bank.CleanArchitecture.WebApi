@@ -2,8 +2,7 @@
 using BankApplication.Application.Authentication.Common;
 using BankApplication.Application.Common.Errors;
 using BankApplication.Application.Common.Interfaces;
-using BankApplication.Application.Persistence;
-using BankApplication.Application.Services.Commands.Register;
+using BankApplication.Application.Common.Interfaces.Persistence;
 using BankApplication.Application.Services.Queries.Login;
 using Domain.Domains;
 using MediatR;

@@ -24,6 +24,7 @@ namespace BankApplication.Api.Controllers
                 InvalidTransferOperation => (StatusCodes.Status400BadRequest, "No such transfer operation, See Documentation for further information."),
                 InvalidTransfer => (StatusCodes.Status400BadRequest, "Invalid Account Ownership"),
                 InsufficientFunds => (StatusCodes.Status400BadRequest, "Insufficient funds or you're not the owner of both accounts, change operation!"),
+                InternalServerError => (StatusCodes.Status500InternalServerError, "Internal server error."),
             };
             return Problem(statusCode: statusCode, title: message);
         }

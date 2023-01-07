@@ -1,5 +1,5 @@
 ﻿using System;
-namespace BankApplication.Application.Customers.DTOs.Commands;
+namespace BankApplication.Application.Customers;
 
 public record TransferResponse(
     string TransactionId,

@@ -273,3 +273,7 @@
 /Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
 /Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Scrutor.dll
+/Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Swashbuckle.AspNetCore.Filters.dll
+/Users/felix/Developer/BankApplication/BankApplication/bin/Debug/net7.0/Swashbuckle.AspNetCore.Filters.Abstractions.dll

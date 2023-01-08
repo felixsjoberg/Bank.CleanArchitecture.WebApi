@@ -8,8 +8,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BankApplication.Controllers;
 
-[Route("auth")]
+  [Route("auth")]
   [ApiController]
+  [AllowAnonymous]
   public class AuthenticationController : ControllerBase 
   {
     private readonly ISender _mediator;

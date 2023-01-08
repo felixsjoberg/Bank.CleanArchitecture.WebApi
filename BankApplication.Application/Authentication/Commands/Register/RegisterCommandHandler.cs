@@ -29,10 +29,10 @@ public class RegisterCommandHandler :
 
         var user = new User
         {
-            FirstName = command.FirstName,
-            LastName = command.LastName,
             Email = command.Email,
-            Password = command.Password
+            Password = command.Password,
+            Role = command.Role
+
         };
 
         _userRepository.Add(user);

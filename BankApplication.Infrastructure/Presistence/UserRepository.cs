@@ -20,10 +20,9 @@ public class UserRepository : IUserRepository
         {
             DynamicParameters parameters = new DynamicParameters();
             parameters.Add("@UserId", user.UserId);
-            parameters.Add("@FirstName", user.FirstName);
-            parameters.Add("@LastName", user.LastName);
             parameters.Add("@Email", user.Email);
             parameters.Add("@Password", user.Password);
+            parameters.Add("@Role", user.Role);
             db.ExecuteScalar("AddUser", parameters, commandType: CommandType.StoredProcedure);
         }
     }

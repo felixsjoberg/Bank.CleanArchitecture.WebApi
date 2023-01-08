@@ -28,7 +28,6 @@
     <None Remove="Customers\" />
     <None Remove="Customers\Commands\" />
     <None Remove="Customers\Queries\" />
-    <None Remove="Customers\Queries\GetAccountById\" />
     <None Remove="Customers\Queries\GetAccounts\" />
     <None Remove="Customers\Commands\CreateAccount\" />
     <None Remove="Adminstrator\" />
@@ -54,7 +53,6 @@
     <Folder Include="Customers\" />
     <Folder Include="Customers\Commands\" />
     <Folder Include="Customers\Queries\" />
-    <Folder Include="Customers\Queries\GetAccountById\" />
     <Folder Include="Customers\Queries\GetAccounts\" />
     <Folder Include="Customers\Commands\CreateAccount\" />
     <Folder Include="Adminstrator\" />

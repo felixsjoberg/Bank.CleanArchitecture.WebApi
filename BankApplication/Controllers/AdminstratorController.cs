@@ -36,7 +36,7 @@ namespace BankApplication.Api.Controllers
             return Ok(response);
         }
 
-        [HttpPost("credit")]
+        [HttpPost("customer")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> NewCustomerAccount(NewCustomerAccountRequest request)

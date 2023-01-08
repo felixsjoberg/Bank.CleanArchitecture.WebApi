@@ -1,4 +1,5 @@
 using System.Reflection;
+using BankApplication.Api.Service;
 using Mapster;
 using MapsterMapper;
 
@@ -13,7 +14,6 @@ public static class DependencyInjection
         
         services.AddSingleton(config);
         services.AddScoped<IMapper, ServiceMapper>();
-        
         return services;
     }
 }

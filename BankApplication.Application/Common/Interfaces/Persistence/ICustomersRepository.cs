@@ -10,7 +10,7 @@ public interface ICustomersRepository
 {
     Task<Account?> CreateAccount(Guid userId,string frequency);
     Task<IEnumerable<Account>>GetAccounts(Guid userId);
-    Task<IEnumerable<AccountAggregate>> GetAccountById(int accountId);
+    Task<IEnumerable<AccountAggregate>> GetTransactionsByAccId(Guid userId, int accountId);
     Task<TransferAggregate>Transfer(Guid userId,int accountId,string operation, decimal amount,string account);
 }
 

@@ -8,10 +8,8 @@
 
   <ItemGroup>
     <None Remove="Entities\" />
-    <None Remove="AccountAggregate\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
-    <Folder Include="AccountAggregate\" />
   </ItemGroup>
 </Project>

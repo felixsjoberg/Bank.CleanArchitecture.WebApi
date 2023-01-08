@@ -1,7 +1,7 @@
 ﻿using System;
 namespace BankApplication.Contracts.Customers;
 
-public record GetAccountByIdResponse(
+public record GetTransactionsByAccIdResultResponse(
     // int AccountId,
     //int AccountTypesId,
     //DateTime Created,

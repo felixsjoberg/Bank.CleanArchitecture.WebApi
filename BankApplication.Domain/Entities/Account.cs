@@ -25,6 +25,5 @@ public partial class Account
     public virtual ICollection<Loan> Loans { get; } = new List<Loan>();
 
     public virtual ICollection<Transaction> Transactions { get; } = new List<Transaction>();
-
-    public virtual User? User { get; set; }
+    public User User { get; set; }
 }

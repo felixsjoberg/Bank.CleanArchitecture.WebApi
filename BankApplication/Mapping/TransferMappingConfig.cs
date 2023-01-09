@@ -1,5 +1,5 @@
-﻿using BankApplication.Application.Customers;
-using BankApplication.Application.Customers.Response.Commands;
+﻿using BankApplication.Application.Accounts.Response.Commands;
+using BankApplication.Contracts.Transactions;
 using Mapster;
 
 namespace BankApplication.Api.Mapping;

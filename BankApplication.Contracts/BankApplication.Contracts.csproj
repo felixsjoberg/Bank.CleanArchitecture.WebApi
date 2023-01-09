@@ -8,22 +8,25 @@
 
   <ItemGroup>
     <None Remove="Authentication\" />
-    <None Remove="Customers\" />
     <None Remove="Customers\GetAccounts\" />
     <None Remove="Customers\GetAccount\" />
     <None Remove="Customers\CreateAccount\" />
     <None Remove="Adminstrator\" />
     <None Remove="Adminstrator\AddAccountCredit\" />
-    <None Remove="Adminstrator\CreateCustomerAccount\" />
+    <None Remove="Transactions\" />
+    <None Remove="Transactions\Transfer\" />
+    <None Remove="Adminstrator\NewCustomerAccount\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Authentication\" />
-    <Folder Include="Customers\" />
-    <Folder Include="Customers\GetAccounts\" />
-    <Folder Include="Customers\GetAccount\" />
-    <Folder Include="Customers\CreateAccount\" />
+    <Folder Include="Accounts\" />
+    <Folder Include="Accounts\GetAccounts\" />
+    <Folder Include="Accounts\GetAccount\" />
+    <Folder Include="Accounts\CreateAccount\" />
     <Folder Include="Adminstrator\" />
     <Folder Include="Adminstrator\AddAccountCredit\" />
-    <Folder Include="Adminstrator\CreateCustomerAccount\" />
+    <Folder Include="Transactions\" />
+    <Folder Include="Transactions\Transfer\" />
+    <Folder Include="Adminstrator\NewCustomerAccount\" />
   </ItemGroup>
 </Project>

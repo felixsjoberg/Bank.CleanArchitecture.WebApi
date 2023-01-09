@@ -1,3 +1,4 @@
+
 using BankApplication.Application.Common.Errors;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
@@ -25,6 +26,8 @@ namespace BankApplication.Api.Controllers
                 InvalidTransfer => (StatusCodes.Status400BadRequest, "Invalid Account Ownership"),
                 InsufficientFunds => (StatusCodes.Status400BadRequest, "Insufficient funds or you're not the owner of both accounts, change operation!"),
                 InternalServerError => (StatusCodes.Status500InternalServerError, "Internal server error."),
+                RequieredFrequencyForSavingAcc => (StatusCodes.Status400BadRequest, "Invalid Frequency interval for a Savings Account"),
+                
             };
             return Problem(statusCode: statusCode, title: message);
         }

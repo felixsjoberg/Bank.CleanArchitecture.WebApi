@@ -29,7 +29,7 @@ public partial class Customer
 
     public string? Telephonenumber { get; set; }
 
-    public string? Emailaddress { get; set; }
+    public string Emailaddress { get; set; }
 
     public virtual ICollection<Disposition> Dispositions { get; } = new List<Disposition>();
 }

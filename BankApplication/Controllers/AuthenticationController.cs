@@ -22,6 +22,7 @@ namespace BankApplication.Controllers;
         _mapper = mapper;
     }
 
+    [Route("/admin")]
     [HttpPost("register")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status409Conflict)]

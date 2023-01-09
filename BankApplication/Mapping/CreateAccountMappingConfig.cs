@@ -1,4 +1,6 @@
-﻿using BankApplication.Application.Customers;
+﻿using BankApplication.Application.Accounts;
+using BankApplication.Application.Accounts.Response.Commands;
+using BankApplication.Application.Customers;
 using BankApplication.Application.Customers.Response.Commands;
 using Mapster;
 
@@ -13,7 +15,7 @@ public class CreateAccountMappingConfig : IRegister
             .Map(dest => dest.Frequency, src => src.Account.Frequency)
             .Map(dest => dest.Created, src => src.Account.Created)
             .Map(dest => dest.Balance, src => src.Account.Balance)
-            .Map(dest => dest.UserId, src => src.Account.User.UserId);
+            .Map(dest => dest.AccountTypesId, src => src.Account.AccountTypesId);
     }
 }
 

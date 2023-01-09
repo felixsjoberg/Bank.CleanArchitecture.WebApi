@@ -1,16 +1,15 @@
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
 using BankApplication.Api.Service;
-using BankApplication.Application.Customers;
-using BankApplication.Application.Customers.Commands;
-using BankApplication.Application.Customers.Queries.GetAccountById;
-using BankApplication.Application.Customers.Queries.GetAccounts;
-using BankApplication.Contracts.Customers;
+using BankApplication.Application.Accounts;
+using BankApplication.Application.Accounts.Commands;
+using BankApplication.Application.Accounts.Queries.GetAccountById;
+using BankApplication.Application.Accounts.Queries.GetAccounts;
+using BankApplication.Application.Transactions.Commands.Transfer;
+using BankApplication.Contracts.Accounts;
+using BankApplication.Contracts.Transactions;
 using MapsterMapper;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
 
 namespace BankApplication.Api.Controllers;
 
@@ -39,7 +38,7 @@ public class CustomersController : ControllerBase
     {
         // API act as client, login function replicate regular login system therefore extract JWT.
         Guid userId = _jwtService.ExtractJwt();
-        var requestData = new CreateAccountRequestData(userId,request.Frequency);
+        var requestData = new CreateAccountRequestData(userId,request.Frequency,request.AccountTypesId);
 
         var command = _mapper.Map<CreateAccountCommand>(requestData);
         var authResult = await _mediator.Send(command);

@@ -1,6 +1,4 @@
-﻿using System.Reflection;
-using BankApplication.Application.Customers.Queries;
-using MediatR;
+﻿using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 namespace BankApplication.Application;
 

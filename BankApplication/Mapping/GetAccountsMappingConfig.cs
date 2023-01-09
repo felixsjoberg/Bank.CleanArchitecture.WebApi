@@ -1,4 +1,4 @@
-﻿using BankApplication.Application.Customers;
+﻿using BankApplication.Application.Accounts;
 using BankApplication.Application.Customers.Response.Queries;
 using Mapster;
 

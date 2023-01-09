@@ -25,11 +25,6 @@
     <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
     <None Remove="Authentication\Common\" />
     <None Remove="Microsoft.Extensions.Configuration.UserSecrets" />
-    <None Remove="Customers\" />
-    <None Remove="Customers\Commands\" />
-    <None Remove="Customers\Queries\" />
-    <None Remove="Customers\Queries\GetAccounts\" />
-    <None Remove="Customers\Commands\CreateAccount\" />
     <None Remove="Adminstrator\" />
     <None Remove="Adminstrator\Commands\" />
     <None Remove="Adminstrator\Queries\" />
@@ -38,6 +33,10 @@
     <None Remove="Adminstrator\Response\Queries\" />
     <None Remove="Adminstrator\Commands\AddAccountCredit\" />
     <None Remove="Adminstrator\Commands\NewCustomerAccount\" />
+    <None Remove="Transactions\" />
+    <None Remove="Transactions\Commands\" />
+    <None Remove="Transactions\Commands\Transfer\" />
+    <None Remove="Common\Services\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
@@ -50,11 +49,6 @@
     <Folder Include="Authentication\Queries\" />
     <Folder Include="Authentication\Queries\Login\" />
     <Folder Include="Authentication\Common\" />
-    <Folder Include="Customers\" />
-    <Folder Include="Customers\Commands\" />
-    <Folder Include="Customers\Queries\" />
-    <Folder Include="Customers\Queries\GetAccounts\" />
-    <Folder Include="Customers\Commands\CreateAccount\" />
     <Folder Include="Adminstrator\" />
     <Folder Include="Adminstrator\Commands\" />
     <Folder Include="Adminstrator\Queries\" />
@@ -63,6 +57,10 @@
     <Folder Include="Adminstrator\Response\Queries\" />
     <Folder Include="Adminstrator\Commands\AddAccountCredit\" />
     <Folder Include="Adminstrator\Commands\NewCustomerAccount\" />
+    <Folder Include="Transactions\" />
+    <Folder Include="Transactions\Commands\" />
+    <Folder Include="Transactions\Commands\Transfer\" />
+    <Folder Include="Common\Services\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />

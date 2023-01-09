@@ -1,31 +1,38 @@
-﻿//using BankApplication.Application.Adminstrator.Response.Commands;
-//using BankApplication.Application.Common.Errors;
-//using BankApplication.Application.Common.Interfaces.Persistence;
-//using BankApplication.Application.Customers.Response.Commands;
-//using BankApplication.Domain.Aggregates;
-//using Domain.Domains;
-//using Domain.Models;
-//using MediatR;
+﻿using BankApplication.Application.Adminstrator.Response.Commands;
+using BankApplication.Application.Common.Errors;
+using BankApplication.Application.Common.Interfaces.Persistence;
+using BankApplication.Domain.Aggregates;
+using Domain.Domains;
+using BankApplication.Application.Common.Services;
+using MediatR;
 
-//namespace BankApplication.Application.Customers.Commands.AddAccountCredit;
+namespace BankApplication.Application.Customers.Commands.AddAccountCredit;
 
-//public class NewCustomerAccountCommandHandler : IRequestHandler<NewCustomerAccountCommand, NewCustomerAccountResult>
-//{
-//    private readonly IAdminstratorRepository _adminstratorRepository;
+public class NewCustomerAccountCommandHandler : IRequestHandler<NewCustomerAccountCommand, NewCustomerAccountResult>
+{
+    private readonly ICustomerRepository _customerRepository;
 
-//    public NewCustomerAccountCommandHandler(IAdminstratorRepository adminstratorRepository)
-//    {
-//        _adminstratorRepository = adminstratorRepository;
-//    }
+    public NewCustomerAccountCommandHandler(ICustomerRepository customerRepository)
+    {
+        _customerRepository = customerRepository;
+    }
 
-//    public async Task<NewCustomerAccountResult> Handle(NewCustomerAccountCommand request, CancellationToken cancellationToken)
-//    {
-//        var result = await _adminstratorRepository.AddAccountCredit(request.AccountId,request.Amount);
-//        if (result is not TransferAggregate transferDetails)
-//        {
-//            throw new InternalServerError();
-//        }
-//        return new NewCustomerAccountResult(result);
-//    }
-//}
+    public async Task<NewCustomerAccountResult> Handle(NewCustomerAccountCommand request, CancellationToken cancellationToken)
+    {
+        var user = new User
+        {
+            Email = request.Emailaddress,
+            Password = PasswordGenerator.RandomPassword(),
+            Role = "customer",
+
+        };
+        var result = await _customerRepository.NewCustomerAccount(user,request);
+        if (result is not NewCustomerAccountAggregate transferDetails)
+        {
+            throw new InternalServerError();
+        }
+        return new NewCustomerAccountResult(result);
+
+    }
+}
 

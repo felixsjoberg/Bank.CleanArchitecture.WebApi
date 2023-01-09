@@ -1,11 +1,6 @@
-﻿using System.Text;
-using BankApplication.Api;
+﻿using BankApplication.Api;
 using BankApplication.Application;
-using BankApplication.Application.Customers.Queries;
 using BankApplication.Infrastructure;
-using MediatR;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
 

@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using BankApplication.Application.Common.Errors;
 using BankApplication.Application.Common.Interfaces.Persistence;
 using Dapper;
 using Domain.Domains;

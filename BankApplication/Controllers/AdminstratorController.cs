@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace BankApplication.Api.Controllers
 {
     [ApiController]
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "admin")]
     [Route("/admin")]
     public class AdminstratorController : ControllerBase
     {

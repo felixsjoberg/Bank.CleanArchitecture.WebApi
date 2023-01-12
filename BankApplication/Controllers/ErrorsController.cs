@@ -27,7 +27,8 @@ namespace BankApplication.Api.Controllers
                 InsufficientFunds => (StatusCodes.Status400BadRequest, "Insufficient funds or you're not the owner of both accounts, change operation!"),
                 InternalServerError => (StatusCodes.Status500InternalServerError, "Internal server error."),
                 RequieredFrequencyForSavingAcc => (StatusCodes.Status400BadRequest, "Invalid Frequency interval for a Savings Account"),
-                
+                InvalidCustomer => (StatusCodes.Status400BadRequest, "Something went wrong! No customer in database."),
+
             };
             return Problem(statusCode: statusCode, title: message);
         }

@@ -49,4 +49,4 @@ namespace BankApplication.Controllers;
         return Ok(response);
     }
 
-}
+  }

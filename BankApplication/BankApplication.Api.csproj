@@ -32,13 +32,13 @@
     <Folder Include="Mapping\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BankApplication.Contracts\BankApplication.Contracts.csproj">
-      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
-    </ProjectReference>
     <ProjectReference Include="..\BankApplication.Application\BankApplication.Application.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
     <ProjectReference Include="..\BankApplication.Infrastructure\BankApplication.Infrastructure.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\BankApplication.Contracts\BankApplication.Contracts.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>

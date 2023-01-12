@@ -17,22 +17,21 @@ public class AccountsRepository : IAccountsRepository
     }
 
 
-    public async Task<Account?> CreateAccount(Guid userId, string frequency, int AccountTypesId)
+    public async Task<Account?> CreateAccount(Guid userId, string frequency, int AccountTypesId, int? CustomerId)
     {
         using (var db = _context.CreateConnection())
         {
             try
             {
-            var customerId = await db.QuerySingleAsync<int>("GetCustomerIdDispostion", new {userId}, commandType: CommandType.StoredProcedure);
+            //var customerId = await db.QuerySingleAsync<int>("GetCustomerIdDispostion", new {userId}, commandType: CommandType.StoredProcedure);
 
             DynamicParameters parameters = new DynamicParameters();
-            parameters.Add("@customerId", customerId);
+            parameters.Add("@customerId", CustomerId);
             parameters.Add("@userId", userId);
             parameters.Add("@frequency", frequency);
             parameters.Add("@accountTypesId", AccountTypesId);
                 var result= await db.QuerySingleAsync<Account>("CreateAccount", parameters, commandType: CommandType.StoredProcedure);
             return result;
-
             }
             catch (Exception)
             {

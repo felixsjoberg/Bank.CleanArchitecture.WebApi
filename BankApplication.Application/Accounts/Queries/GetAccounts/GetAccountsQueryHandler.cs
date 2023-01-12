@@ -10,9 +10,9 @@ public class GetAccountsQueryHandler : IRequestHandler<GetAccountsQuery, GetAcco
 {
     private readonly IAccountsRepository _AccountsRepository;
 
-    public GetAccountsQueryHandler(IAccountsRepository customerRepository)
+    public GetAccountsQueryHandler(IAccountsRepository accountsRepository)
     {
-        _AccountsRepository = customerRepository;
+        _AccountsRepository = accountsRepository;
     }
 
     public async Task<GetAccountsResult> Handle(GetAccountsQuery query, CancellationToken cancellationToken)

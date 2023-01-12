@@ -9,3 +9,4 @@ public record CreateAccountCommand(
     string Frequency,
     int AccountTypesId
     ) : IRequest<CreateAccountResult>;
+

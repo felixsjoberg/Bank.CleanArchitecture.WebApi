@@ -13,6 +13,7 @@
 </p>
 ## Technologies & Features
 - [x] ASP.NET Core 7 WebApi
+
 - [x] REST Standards
 - [x] Onion Architecture
 - [x] CQRS with MediatR Library

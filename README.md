@@ -11,7 +11,9 @@
     ASP.NET Core Web Api built using essential features as a Bank application!
   </p>
 </p>
-## Technologies & Features
+
+### Technologies & Features
+
 - [x] ASP.NET Core 7 WebApi
 - [x] REST Standards
 - [x] Onion Architecture

@@ -3,13 +3,11 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-
 CREATE PROCEDURE [dbo].[Transfer]
     @accountId int,
     @operation NVARCHAR(50),
     @transferAmount decimal(13,2),
     @destinationAccountNumber NVARCHAR(50)
-
 AS
 BEGIN
     DECLARE @sourceBalance MONEY;
@@ -26,12 +24,13 @@ BEGIN
       return;
     END;
 
+    -- Transfer between accounts, must be owner of both accs. 
     IF @operation LIKE 'Tr%'
     BEGIN
         SELECT @count = COUNT(*) FROM Accounts
-        WHERE AccountId = @accountId AND AccountId = @destinationAccountNumber
+        WHERE AccountId = @accountId OR AccountId = @destinationAccountNumber
 
-            IF @count = 1
+            IF @count = 2
             SET @OperationResponse = @operation;
             
             ELSE

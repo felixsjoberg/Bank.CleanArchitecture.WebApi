@@ -21,8 +21,7 @@ namespace BankApplication.Controllers;
         _mediator = mediator;
         _mapper = mapper;
     }
-
-    [Route("/admin")]
+    [Authorize(Roles = "admin")]
     [HttpPost("register")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status409Conflict)]
@@ -35,6 +34,7 @@ namespace BankApplication.Controllers;
 
         return Ok(response);
     }
+
     [HttpPost("login")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]

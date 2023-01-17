@@ -10,6 +10,5 @@ public interface IAccountsRepository
 {
     Task<Account?> CreateAccount(Guid userId,string frequency, int AccountTypesId, int? CustomerId);
     Task<IEnumerable<Account>>GetAccounts(Guid userId);
-    Task<IEnumerable<AccountAggregate>> GetTransactionsByAccId(Guid userId, int accountId);
 }
 

@@ -23,31 +23,18 @@ public class AccountsRepository : IAccountsRepository
         {
             try
             {
-            //var customerId = await db.QuerySingleAsync<int>("GetCustomerIdDispostion", new {userId}, commandType: CommandType.StoredProcedure);
-
-            DynamicParameters parameters = new DynamicParameters();
-            parameters.Add("@customerId", CustomerId);
-            parameters.Add("@userId", userId);
-            parameters.Add("@frequency", frequency);
-            parameters.Add("@accountTypesId", AccountTypesId);
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@customerId", CustomerId);
+                parameters.Add("@userId", userId);
+                parameters.Add("@frequency", frequency);
+                parameters.Add("@accountTypesId", AccountTypesId);
                 var result= await db.QuerySingleAsync<Account>("CreateAccount", parameters, commandType: CommandType.StoredProcedure);
-            return result;
+                return result;
             }
             catch (Exception)
             {
                 return null;
             }
-        }
-    }
-
-    public async Task<IEnumerable<AccountAggregate>> GetTransactionsByAccId(Guid userId,int accountId)
-    {
-        using (var db = _context.CreateConnection())
-        {
-            DynamicParameters parameters = new DynamicParameters();
-            parameters.Add("@userId", userId);
-            parameters.Add("@accountId", accountId);
-            return await db.QueryAsync<AccountAggregate>("GetTransactionsByAccId", parameters, commandType: CommandType.StoredProcedure);
         }
     }
 

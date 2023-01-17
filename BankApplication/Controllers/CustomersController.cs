@@ -14,7 +14,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace BankApplication.Api.Controllers;
 
 
-[Route("/Customers")]
+[Route("/Accounts")]
 [Authorize(Roles = "customer")]
 [ApiController]
 public class CustomersController : ControllerBase

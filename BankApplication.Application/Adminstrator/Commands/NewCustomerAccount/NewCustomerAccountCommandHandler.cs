@@ -21,7 +21,7 @@ public class NewCustomerAccountCommandHandler : IRequestHandler<NewCustomerAccou
     {
         var user = new User
         {
-            Email = request.Emailaddress,
+            Email = request.Emailaddress.ToLower(),
             Password = PasswordGenerator.RandomPassword(),
             Role = "customer",
 

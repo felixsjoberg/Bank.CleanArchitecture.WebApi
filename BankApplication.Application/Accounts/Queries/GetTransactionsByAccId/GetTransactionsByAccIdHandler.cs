@@ -8,11 +8,11 @@ namespace BankApplication.Application.Accounts.Queries.GetTransactionsByAccId;
 
 public class GetAccountByIdHandler : IRequestHandler<GetTransactionsByAccIdQuery, GetTransactionsByAccIdResult>
 {
-    private readonly IAccountsRepository _AccountsRepository;
+    private readonly ITransactionsRepository _TransactionsRepository;
 
-    public GetAccountByIdHandler(IAccountsRepository customerRepository)
+    public GetAccountByIdHandler(ITransactionsRepository transactionsRepository)
     {
-        _AccountsRepository = customerRepository;
+        _TransactionsRepository = transactionsRepository;
     }
 
     public async Task<GetTransactionsByAccIdResult> Handle(GetTransactionsByAccIdQuery query, CancellationToken cancellationToken)
@@ -21,8 +21,8 @@ public class GetAccountByIdHandler : IRequestHandler<GetTransactionsByAccIdQuery
         {
             throw new InvalidAccount();
         }
-        var result = await _AccountsRepository.GetTransactionsByAccId(query.UserId,query.AccountId);
-        if (result.Count() == 0)
+        var result = await _TransactionsRepository.GetTransactionsByAccId(query.UserId,query.AccountId);
+        if (result is null)
         {
             throw new InvalidAccount();
         }

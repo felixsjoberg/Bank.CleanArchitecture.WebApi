@@ -25,13 +25,13 @@ public class CustomersRepository : ICustomerRepository
     {
         using (var db = _context.CreateConnection())
         {
-                
-            var userExist = await db.QuerySingleAsync<User>("GetUserByEmail", new { command.Emailaddress }, commandType: CommandType.StoredProcedure);
+            DynamicParameters dynamic = new DynamicParameters();
+            dynamic.Add("@email", command.Emailaddress);
+            var userExist = await db.QuerySingleOrDefaultAsync<User>("GetUserByEmail", dynamic, commandType: CommandType.StoredProcedure);
             if (userExist != null)
             {
                 throw new DuplicateEmailException();
             }
-
             try
             {
 
@@ -65,7 +65,7 @@ public class CustomersRepository : ICustomerRepository
                 para.Add("@userId", user.UserId);
                 para.Add("@frequency", command.CustomerAccount.Frequency);
                 para.Add("@accountTypesId", command.CustomerAccount.AccountTypesId);
-                //var result = await db.QuerySingleAsync<NewCustomerAccountAggregate>("CreateAccountReturnDisposition", para, commandType: CommandType.StoredProcedure);
+                
                 var ListNewCustomer = await db.QueryAsync<NewCustomerAccountAggregate, Account, Customer, User, NewCustomerAccountAggregate>("CreateAccountReturnDisposition", (aggregate, account, customer, user) =>
                 {
                     aggregate.Account = account;

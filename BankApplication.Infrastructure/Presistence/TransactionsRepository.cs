@@ -4,6 +4,7 @@ using System.Data;
 using BankApplication.Application.Common.Interfaces.Persistence;
 using BankApplication.Domain.Aggregates;
 using Dapper;
+using static Dapper.SqlMapper;
 
 namespace BankApplication.Infrastructure.Presistence;
 
@@ -26,7 +27,7 @@ public class TransactionsRepository : ITransactionsRepository
                 DynamicParameters dynamicParameters = new DynamicParameters();
                 dynamicParameters.Add("@AccountId", accountId);
                 dynamicParameters.Add("@UserId", userId);
-                var validTransfer = await db.ExecuteAsync("IsValidTransfer", dynamicParameters, commandType: CommandType.StoredProcedure);
+                var validTransfer = await db.ExecuteScalarAsync<int>("IsValidTransfer", dynamicParameters, commandType: CommandType.StoredProcedure);
                 if (validTransfer > 0)
                 {
                     DynamicParameters parameters = new DynamicParameters();
@@ -42,12 +43,35 @@ public class TransactionsRepository : ITransactionsRepository
                     }
                     return result;
                 }
+                else
+                {
+                    throw new InvalidTransfer();
+                }
+            }
+            catch (InsufficientFunds)
+            {
+                throw new InsufficientFunds();
             }
             catch (Exception)
             {
                 throw new InvalidTransfer();
             }
-            throw new InvalidTransfer();
+        }
+    }
+    public async Task<IEnumerable<AccountAggregate?>> GetTransactionsByAccId(Guid userId, int accountId)
+    {
+        using (var db = _context.CreateConnection())
+        {
+            DynamicParameters parameters = new DynamicParameters();
+            parameters.Add("@AccountId", accountId);
+            parameters.Add("@UserId", userId);
+            var validAccOwner = await db.ExecuteScalarAsync<int>("IsValidTransfer", parameters, commandType: CommandType.StoredProcedure);
+
+            if (validAccOwner >0)
+            {
+                return await db.QueryAsync<AccountAggregate>("GetTransactionsByAccId", parameters, commandType: CommandType.StoredProcedure);
+            }
+            return null;
         }
     }
 

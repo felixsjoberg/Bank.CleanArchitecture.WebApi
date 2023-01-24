@@ -21,6 +21,7 @@
 - [x] Dapper
 - [x] StoredProcedures SQL
 - [x] Repository Pattern - Generic
+- [x] Global Error Handling - RFC
 - [x] Options Pattern
 - [x] MediatR Pipeline Logging & Validation
 - [x] Swagger UI

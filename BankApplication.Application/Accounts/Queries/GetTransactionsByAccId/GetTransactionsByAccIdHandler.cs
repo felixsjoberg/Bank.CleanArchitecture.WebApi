@@ -19,6 +19,7 @@ public class GetAccountByIdHandler : IRequestHandler<GetTransactionsByAccIdQuery
     {
         if (query.AccountId == 0)
         {
+            // return notfound
             throw new InvalidAccount();
         }
         var result = await _TransactionsRepository.GetTransactionsByAccId(query.UserId,query.AccountId);

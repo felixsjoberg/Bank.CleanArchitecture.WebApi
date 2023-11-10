@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1cg85+/j3SqS0Ic9N3ctAjMnTfRMeemO1oq+LIK7Fwt58OYOfiBpvtNUV/Dwfs8SnyU6hrQrQ2JRez2vIkCoFg==",
+  "dgSpecHash": "EP3KKbSFRLARlGmrXXgdsuPtb5LkzkiGJHbaEglNswDJWbkHw2Dx9uFzc93x4BF/l3oRkpCpZeZLXcRa7JDLxQ==",
   "success": true,
-  "projectFilePath": "/Users/felix/Developer/BankApplication/BankApplication.Domain/BankApplication.Domain.csproj",
+  "projectFilePath": "/Users/felixsjoberg/code/backend/Bank.CleanArchitecture.WebApi/BankApplication.Domain/BankApplication.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

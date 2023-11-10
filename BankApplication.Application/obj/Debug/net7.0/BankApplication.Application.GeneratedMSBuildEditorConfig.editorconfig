@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BankApplication.Application
-build_property.ProjectDir = /Users/felix/Developer/BankApplication/BankApplication.Application/
+build_property.ProjectDir = /Users/felixsjoberg/code/backend/Bank.CleanArchitecture.WebApi/BankApplication.Application/

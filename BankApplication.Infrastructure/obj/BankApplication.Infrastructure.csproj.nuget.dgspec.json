@@ -1,33 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/Users/felix/Developer/BankApplication/BankApplication.Infrastructure/BankApplication.Infrastructure.csproj": {}
+    "/Users/felixsjoberg/code/backend/Bank.CleanArchitecture.WebApi/BankApplication.Infrastructure/BankApplication.Infrastructure.csproj": {}
   },
   "projects": {
-    "/Users/felix/Developer/BankApplication/BankApplication.Application/BankApplication.Application.csproj": {
+    "/Users/felixsjoberg/code/backend/Bank.CleanArchitecture.WebApi/BankApplication.Application/BankApplication.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/felix/Developer/BankApplication/BankApplication.Application/BankApplication.Application.csproj",
+        "projectUniqueName": "/Users/felixsjoberg/code/backend/Bank.CleanArchitecture.WebApi/BankApplication.Application/BankApplication.Application.csproj",
         "projectName": "BankApplication.Application",
-        "projectPath": "/Users/felix/Developer/BankApplication/BankApplication.Application/BankApplication.Application.csproj",
-        "packagesPath": "/Users/felix/.nuget/packages/",
-        "outputPath": "/Users/felix/Developer/BankApplication/BankApplication.Application/obj/",
+        "projectPath": "/Users/felixsjoberg/code/backend/Bank.CleanArchitecture.WebApi/BankApplication.Application/BankApplication.Application.csproj",
+        "packagesPath": "/Users/felixsjoberg/.nuget/packages/",
+        "outputPath": "/Users/felixsjoberg/code/backend/Bank.CleanArchitecture.WebApi/BankApplication.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/felix/.nuget/NuGet/NuGet.Config"
+          "/Users/felixsjoberg/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "/Users/felixsjoberg/code/backend/microservices/packages": {},
+          "/Users/felixsjoberg/code/backend/servicebus/packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/felix/Developer/BankApplication/BankApplication.Domain/BankApplication.Domain.csproj": {
-                "projectPath": "/Users/felix/Developer/BankApplication/BankApplication.Domain/BankApplication.Domain.csproj"
+              "/Users/felixsjoberg/code/backend/Bank.CleanArchitecture.WebApi/BankApplication.Domain/BankApplication.Domain.csproj": {
+                "projectPath": "/Users/felixsjoberg/code/backend/Bank.CleanArchitecture.WebApi/BankApplication.Domain/BankApplication.Domain.csproj"
               }
             }
           }
@@ -75,26 +77,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/felix/Developer/BankApplication/BankApplication.Domain/BankApplication.Domain.csproj": {
+    "/Users/felixsjoberg/code/backend/Bank.CleanArchitecture.WebApi/BankApplication.Domain/BankApplication.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/felix/Developer/BankApplication/BankApplication.Domain/BankApplication.Domain.csproj",
+        "projectUniqueName": "/Users/felixsjoberg/code/backend/Bank.CleanArchitecture.WebApi/BankApplication.Domain/BankApplication.Domain.csproj",
         "projectName": "BankApplication.Domain",
-        "projectPath": "/Users/felix/Developer/BankApplication/BankApplication.Domain/BankApplication.Domain.csproj",
-        "packagesPath": "/Users/felix/.nuget/packages/",
-        "outputPath": "/Users/felix/Developer/BankApplication/BankApplication.Domain/obj/",
+        "projectPath": "/Users/felixsjoberg/code/backend/Bank.CleanArchitecture.WebApi/BankApplication.Domain/BankApplication.Domain.csproj",
+        "packagesPath": "/Users/felixsjoberg/.nuget/packages/",
+        "outputPath": "/Users/felixsjoberg/code/backend/Bank.CleanArchitecture.WebApi/BankApplication.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/felix/.nuget/NuGet/NuGet.Config"
+          "/Users/felixsjoberg/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "/Users/felixsjoberg/code/backend/microservices/packages": {},
+          "/Users/felixsjoberg/code/backend/servicebus/packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -128,34 +132,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/felix/Developer/BankApplication/BankApplication.Infrastructure/BankApplication.Infrastructure.csproj": {
+    "/Users/felixsjoberg/code/backend/Bank.CleanArchitecture.WebApi/BankApplication.Infrastructure/BankApplication.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/felix/Developer/BankApplication/BankApplication.Infrastructure/BankApplication.Infrastructure.csproj",
+        "projectUniqueName": "/Users/felixsjoberg/code/backend/Bank.CleanArchitecture.WebApi/BankApplication.Infrastructure/BankApplication.Infrastructure.csproj",
         "projectName": "BankApplication.Infrastructure",
-        "projectPath": "/Users/felix/Developer/BankApplication/BankApplication.Infrastructure/BankApplication.Infrastructure.csproj",
-        "packagesPath": "/Users/felix/.nuget/packages/",
-        "outputPath": "/Users/felix/Developer/BankApplication/BankApplication.Infrastructure/obj/",
+        "projectPath": "/Users/felixsjoberg/code/backend/Bank.CleanArchitecture.WebApi/BankApplication.Infrastructure/BankApplication.Infrastructure.csproj",
+        "packagesPath": "/Users/felixsjoberg/.nuget/packages/",
+        "outputPath": "/Users/felixsjoberg/code/backend/Bank.CleanArchitecture.WebApi/BankApplication.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/felix/.nuget/NuGet/NuGet.Config"
+          "/Users/felixsjoberg/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "/Users/felixsjoberg/code/backend/microservices/packages": {},
+          "/Users/felixsjoberg/code/backend/servicebus/packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/felix/Developer/BankApplication/BankApplication.Application/BankApplication.Application.csproj": {
-                "projectPath": "/Users/felix/Developer/BankApplication/BankApplication.Application/BankApplication.Application.csproj"
+              "/Users/felixsjoberg/code/backend/Bank.CleanArchitecture.WebApi/BankApplication.Application/BankApplication.Application.csproj": {
+                "projectPath": "/Users/felixsjoberg/code/backend/Bank.CleanArchitecture.WebApi/BankApplication.Application/BankApplication.Application.csproj"
               }
             }
           }
@@ -215,7 +221,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
         }
       }
     }

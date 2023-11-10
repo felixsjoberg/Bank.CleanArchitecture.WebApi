@@ -1,0 +1,31 @@
+services:
+  
+  ms-sqlserver:
+    image: "mcr.microsoft.com/azure-sql-edge"
+    hostname: "azure-sql"
+    environment:
+      ACCEPT_EULA: 1
+      MSSQL_SA_PASSWORD: "example@123"
+    networks:
+      - inlamning-net
+    volumes:
+      - ms-sqlserver-edge-data:/var/opt/mssql
+    ports:
+      - "1433:1433"
+
+  bank-backend:
+    build: ./
+    ports:
+      - "80:80"
+    networks:
+      - inlamning-net
+    depends_on:
+      - ms-sqlserver
+
+
+volumes:
+    ms-sqlserver-edge-data:
+
+networks:
+  inlamning-net:
+    driver: bridge

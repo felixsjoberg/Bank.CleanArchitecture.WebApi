@@ -52,8 +52,8 @@ public static class DependencyInjection
         return services;
     }
 
-        public static IServiceCollection AddAuth(
-        this IServiceCollection services, ConfigurationManager configuration)
+    public static IServiceCollection AddAuth(
+    this IServiceCollection services, ConfigurationManager configuration)
     {
         var JwtSettings = new JwtSettings();
         configuration.Bind(JwtSettings.SectionName, JwtSettings);

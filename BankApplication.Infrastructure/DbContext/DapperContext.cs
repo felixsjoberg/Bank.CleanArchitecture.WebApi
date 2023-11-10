@@ -1,8 +1,7 @@
-﻿using System;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
 using BankApplication.Infrastructure.Presistence;
-using Microsoft.Extensions.Configuration;
+using Dapper;
 using Microsoft.Extensions.Options;
 
 namespace BankApplication.Infrastructure;

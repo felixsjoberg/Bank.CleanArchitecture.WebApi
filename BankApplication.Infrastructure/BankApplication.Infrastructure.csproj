@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BankApplication.Application\BankApplication.Application.csproj" />
+    <ProjectReference Include="../BankApplication.Application/BankApplication.Application.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Dapper" />
